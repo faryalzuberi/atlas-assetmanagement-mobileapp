@@ -1,14 +1,10 @@
 import React from 'react';
-import {createMaterialBottomTabNavigator} from '@react-navigation/material-bottom-tabs';
-const Tab = createMaterialBottomTabNavigator();
+import RootStackNavigator from './components/navigations/root_stack/RootStackNavigator';
 
 const App = () => {
   return (
     <>
-      <Tab.Navigator>
-        <Tab.Screen name="Home" component={<></>} />
-        <Tab.Screen name="Settings" component={<></>} />
-      </Tab.Navigator>
+      <RootStackNavigator />
     </>
   );
 };
