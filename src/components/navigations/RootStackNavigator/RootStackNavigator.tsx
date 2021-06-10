@@ -1,8 +1,8 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
-import TabNavigator from './../tab_navigator/index';
+import {TabNavigator} from '../TabNavigator';
 
-const RootStack = createStackNavigator();
+const RootStack: any = createStackNavigator();
 const RootStackNavigator = () => {
   return (
     <>
