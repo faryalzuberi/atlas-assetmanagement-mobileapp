@@ -5,7 +5,7 @@ import LinearGradient from 'react-native-linear-gradient';
 
 import {styles} from './styles';
 import {TabBg} from '../svg';
-import colorConstants from '../../../../utils/colorConstants';
+import {colorConstants} from '../../../../utils/colorConstants';
 
 import HomeIcon from '../../../../assets/Icons/BottomTabNavigator/home.svg';
 

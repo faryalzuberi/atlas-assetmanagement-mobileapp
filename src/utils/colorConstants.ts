@@ -1,4 +1,4 @@
-const colorConstants = {
+export const colorConstants = {
   red: 'red',
   gray: 'gray',
   black: 'black',
@@ -35,4 +35,3 @@ const colorConstants = {
   modalBodyColor: '#EBF2FA',
   placeHolderColor: 'grey',
 };
-export default colorConstants;

@@ -1,6 +1,6 @@
 import {StyleSheet} from 'react-native';
-import colorConstants from '../../../utils/colorConstants';
-import dimensionConstants from '../../../utils/dimensionConstants';
+import {colorConstants} from '../../../utils/colorConstants';
+import {dimensionConstants} from '../../../utils/dimensionConstants';
 
 export const styles = StyleSheet.create({
   navigatorContainer: {

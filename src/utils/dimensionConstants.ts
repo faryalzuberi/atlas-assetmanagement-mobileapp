@@ -26,4 +26,3 @@ export const dimensionConstants = {
   cardTxtSize: 15,
   cardTxtDesSize: 15,
 };
-export default dimensionConstants;

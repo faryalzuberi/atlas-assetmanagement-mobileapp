@@ -2,13 +2,14 @@ import React from 'react';
 import {View} from 'react-native';
 import {Appbar} from 'react-native-paper';
 import {styles} from './styles';
-import HomeIcon from '../../../assets/Icons/BottomTabNavigator/home.svg';
+
+import Logo from '../../../assets/Icons/Logo/AtlasLogoHorizontal.svg';
 
 const AppHeader = () => {
   return (
     <Appbar.Header style={styles.header}>
       <View style={styles.logo}>
-        <HomeIcon width="200" height="40" />
+        <Logo width="100%" height="42" />
       </View>
     </Appbar.Header>
   );

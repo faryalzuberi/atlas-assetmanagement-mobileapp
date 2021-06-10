@@ -3,7 +3,7 @@ import {View} from 'react-native';
 import {Card, Title, Paragraph} from 'react-native-paper';
 import {styles} from './styles';
 
-export default function MenuCard({label, icon}) {
+export default function MenuCard({label, icon}: any) {
   return (
     <Card style={styles.card}>
       <Card.Content>

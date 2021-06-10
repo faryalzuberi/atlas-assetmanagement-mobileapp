@@ -2,6 +2,7 @@ import React from 'react';
 import {View} from 'react-native';
 import {
   BottomTabBar,
+  BottomTabBarOptions,
   createBottomTabNavigator,
 } from '@react-navigation/bottom-tabs';
 
@@ -16,6 +17,12 @@ import {styles} from './styles';
 import {IS_IPHONE_X} from '../../../utils/iphoneX';
 import TabBarAdvancedButton from './TabBarAdvancedButton';
 import HomeIcon from '../../../assets/Icons/BottomTabNavigator/home.svg';
+import {
+  BottomTabDescriptorMap,
+  BottomTabNavigationEventMap,
+} from '@react-navigation/bottom-tabs/lib/typescript/src/types';
+import {NavigationHelpers} from '@react-navigation/core';
+import {TabNavigationState, ParamListBase} from '@react-navigation/routers';
 
 const BottomBar: any = createBottomTabNavigator();
 
@@ -25,7 +32,20 @@ type Props = {
 
 export const TabNavigator: React.FC<Props> = ({barColor}) => (
   <BottomBar.Navigator
-    tabBar={props => (
+    tabBar={(
+      props: JSX.IntrinsicAttributes &
+        BottomTabBarOptions & {
+          state: TabNavigationState<ParamListBase>;
+          descriptors: BottomTabDescriptorMap;
+          navigation: NavigationHelpers<
+            ParamListBase,
+            BottomTabNavigationEventMap
+          >;
+        } & {
+          activeTintColor?: string | undefined;
+          inactiveTintColor?: string | undefined;
+        },
+    ) => (
       <View style={styles.navigatorContainer}>
         <BottomTabBar {...props} />
         {IS_IPHONE_X && (
