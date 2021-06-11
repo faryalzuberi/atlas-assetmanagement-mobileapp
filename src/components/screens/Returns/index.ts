@@ -1,2 +1,1 @@
-import Returns from './Returns';
-export default Returns;
+export * from './Returns';

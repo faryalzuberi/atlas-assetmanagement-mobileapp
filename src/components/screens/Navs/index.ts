@@ -1,2 +1,1 @@
-import Navs from './Navs';
-export default Navs;
+export * from './Navs';

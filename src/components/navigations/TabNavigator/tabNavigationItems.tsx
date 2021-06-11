@@ -15,7 +15,7 @@ import NewsIcon from '../../../assets/Icons/GuestNavigation/News.svg';
 type IconProps = {color: string};
 export const tabNavigationItems = [
   {
-    name: languageTxt.navtxt,
+    name: languageTxt.navTxt,
     component: NavsStackNavigator,
     options: {
       tabBarIcon: ({color}: IconProps) => (
@@ -24,7 +24,7 @@ export const tabNavigationItems = [
     },
   },
   {
-    name: languageTxt.returnstxt,
+    name: languageTxt.returnsTxt,
     component: ReturnsStackNavigator,
     options: {
       tabBarIcon: ({color}: IconProps) => (
@@ -33,11 +33,11 @@ export const tabNavigationItems = [
     },
   },
   {
-    name: languageTxt.hometxt,
+    name: languageTxt.homeTxt,
     component: HomeStackNavigator,
   },
   {
-    title: languageTxt.contactustxt,
+    name: languageTxt.contactusTxt,
     component: ContactUsStackNavigator,
     options: {
       tabBarIcon: ({color}: IconProps) => (
@@ -46,7 +46,7 @@ export const tabNavigationItems = [
     },
   },
   {
-    title: languageTxt.newstxt,
+    name: languageTxt.newsTxt,
     component: NewsStackNavigator,
     options: {
       tabBarIcon: ({color}: IconProps) => (

@@ -1,10 +1,12 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 
-export default function ContactUs() {
+import {styles} from './styles';
+
+export const ContactUs = () => {
   return (
     <View>
       <Text>ContactUs</Text>
     </View>
   );
-}
+};

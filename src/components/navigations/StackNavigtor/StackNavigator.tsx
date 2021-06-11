@@ -1,12 +1,12 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 
-import Home from '../../screens/Home';
-import Navs from '../../screens/Navs';
-import News from '../../screens/News';
-import Returns from '../../screens/Returns';
-import ContactUs from '../../screens/ContactUs';
-import AppHeader from '../../shared/AppHeader';
+import {Home} from '../../screens/Home';
+import {Navs} from '../../screens/Navs';
+import {News} from '../../screens/News';
+import {Returns} from '../../screens/Returns';
+import {ContactUs} from '../../screens/ContactUs';
+import {AppHeader} from '../../shared/AppHeader';
 
 const Stack: any = createStackNavigator();
 const HomeStackNavigator = () => {

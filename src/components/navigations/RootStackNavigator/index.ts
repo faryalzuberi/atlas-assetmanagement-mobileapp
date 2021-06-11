@@ -1,2 +1,1 @@
-import RootStackNavigator from './RootStackNavigator';
-export default RootStackNavigator;
+export * from './RootStackNavigator';

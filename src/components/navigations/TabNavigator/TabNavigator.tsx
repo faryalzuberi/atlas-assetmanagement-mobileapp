@@ -5,24 +5,19 @@ import {
   BottomTabBarOptions,
   createBottomTabNavigator,
 } from '@react-navigation/bottom-tabs';
-
-import {
-  HomeStackNavigator,
-  ContactUsStackNavigator,
-  NavsStackNavigator,
-  ReturnsStackNavigator,
-  NewsStackNavigator,
-} from '../StackNavigtor';
-import {styles} from './styles';
-import {IS_IPHONE_X} from '../../../utils/iphoneX';
-import TabBarAdvancedButton from './TabBarAdvancedButton';
-import HomeIcon from '../../../assets/Icons/BottomTabNavigator/home.svg';
 import {
   BottomTabDescriptorMap,
   BottomTabNavigationEventMap,
 } from '@react-navigation/bottom-tabs/lib/typescript/src/types';
 import {NavigationHelpers} from '@react-navigation/core';
 import {TabNavigationState, ParamListBase} from '@react-navigation/routers';
+
+import {styles} from './styles';
+import {IS_IPHONE_X} from '../../../utils/iphoneX';
+import {TabBarAdvancedButton} from './TabBarAdvancedButton';
+import {tabNavigationItems} from './tabNavigationItems';
+import {languageTxt} from '../../../utils/languageTxt';
+import {colorConstants} from '../../../utils/colorConstants';
 
 const BottomBar: any = createBottomTabNavigator();
 
@@ -53,7 +48,7 @@ export const TabNavigator: React.FC<Props> = ({barColor}) => (
             style={[
               styles.xFillLine,
               {
-                backgroundColor: barColor,
+                backgroundColor: colorConstants.white,
               },
             ]}
           />
@@ -62,47 +57,35 @@ export const TabNavigator: React.FC<Props> = ({barColor}) => (
     )}
     tabBarOptions={{
       showIcon: true,
+      activeTintColor: colorConstants.primary,
+      inactiveTintColor: colorConstants.navInactiveTxt,
       style: styles.navigator,
       tabStyle: {
-        backgroundColor: barColor,
+        backgroundColor: colorConstants.white,
       },
     }}>
-    <BottomBar.Screen
-      name="Home"
-      component={HomeStackNavigator}
-      options={{
-        tabBarIcon: ({color}) => <HomeIcon fill={color} />,
-      }}
-    />
-    <BottomBar.Screen
-      name="ContactUs"
-      component={ContactUsStackNavigator}
-      options={{
-        tabBarIcon: ({color}) => <HomeIcon fill={color} />,
-      }}
-    />
-    <BottomBar.Screen
-      name="Navs"
-      component={NavsStackNavigator}
-      options={{
-        tabBarButton: props => (
-          <TabBarAdvancedButton bgColor={barColor} {...props} />
-        ),
-      }}
-    />
-    <BottomBar.Screen
-      name="Returns"
-      component={ReturnsStackNavigator}
-      options={{
-        tabBarIcon: ({color}) => <HomeIcon fill={color} />,
-      }}
-    />
-    <BottomBar.Screen
-      name="News"
-      component={NewsStackNavigator}
-      options={{
-        tabBarIcon: ({color}) => <HomeIcon fill={color} />,
-      }}
-    />
+    {tabNavigationItems.length ? (
+      <>
+        {tabNavigationItems.map((listItemMeta, i) => (
+          <BottomBar.Screen
+            key={i}
+            name={listItemMeta.name}
+            component={listItemMeta.component}
+            options={
+              listItemMeta.name === languageTxt.homeTxt
+                ? {
+                    tabBarButton: (props: any) => (
+                      <TabBarAdvancedButton
+                        bgColor={colorConstants.white}
+                        {...props}
+                      />
+                    ),
+                  }
+                : listItemMeta.options
+            }
+          />
+        ))}
+      </>
+    ) : null}
   </BottomBar.Navigator>
 );

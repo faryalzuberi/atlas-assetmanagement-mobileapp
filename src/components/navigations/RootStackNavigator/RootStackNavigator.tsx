@@ -1,9 +1,10 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
+
 import {TabNavigator} from '../TabNavigator';
 
 const RootStack: any = createStackNavigator();
-const RootStackNavigator = () => {
+export const RootStackNavigator = () => {
   return (
     <>
       <RootStack.Navigator initialRouteName="TabNavigator">
@@ -16,4 +17,3 @@ const RootStackNavigator = () => {
     </>
   );
 };
-export default RootStackNavigator;

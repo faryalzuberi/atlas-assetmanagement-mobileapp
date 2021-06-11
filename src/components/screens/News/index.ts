@@ -1,2 +1,1 @@
-import News from './News';
-export default News;
+export * from './News';

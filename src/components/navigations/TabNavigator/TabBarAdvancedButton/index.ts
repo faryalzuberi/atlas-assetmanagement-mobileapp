@@ -1,2 +1,1 @@
-import {TabBarAdvancedButton} from './TabBarAdvancedButton';
-export default TabBarAdvancedButton;
+export * from './TabBarAdvancedButton';

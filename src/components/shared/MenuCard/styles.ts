@@ -2,6 +2,9 @@ import {StyleSheet} from 'react-native';
 import {colorConstants} from '../../../utils/colorConstants';
 
 export const styles = StyleSheet.create({
+  buttonClick: {
+    flex: 1,
+  },
   card: {
     flex: 1,
     margin: 5,

@@ -1,10 +1,12 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 
-export default function Navs() {
+import {styles} from './styles';
+
+export const Navs = () => {
   return (
     <View>
       <Text>Navs</Text>
     </View>
   );
-}
+};

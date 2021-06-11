@@ -1,10 +1,12 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 
-export default function Returns() {
+import {styles} from './styles';
+
+export const Returns = () => {
   return (
     <View>
       <Text>Returns</Text>
     </View>
   );
-}
+};
