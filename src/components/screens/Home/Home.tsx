@@ -1,24 +1,31 @@
 import React from 'react';
 import {ScrollView, View} from 'react-native';
-
+import AppIntroSlider from 'react-native-app-intro-slider';
 import {MenuCard} from '../../shared/MenuCard/MenuCard';
-import SliderCard from './../../shared/SliderCard/index';
+import {SliderCard} from './../../shared/SliderCard/index';
 import {guestTabtems} from './guestTabtems';
 import {styles} from './styles';
-
+import {sliderCardItems} from './sliderCardItems';
 export const Home = () => {
+  const renderItem = ({item}: any) => {
+    return (
+      <SliderCard
+        title={item.title}
+        paragraph={item.paragraph}
+        imageElement={item.imageElement}
+      />
+    );
+  };
   return (
-    <ScrollView
-      showsVerticalScrollIndicator={false}
-      style={{flex: 1, marginBottom: 50}}>
+    <ScrollView showsVerticalScrollIndicator={false}>
       <View style={styles.bodyContainer}>
-        <SliderCard
-          title="My Title"
-          paragraph="My Paragraph"
-          imageElement={<HomeIcon width={'40'} height={'40'} fill={'red'} />}
-        />
-      </View>
-      <View style={styles.bodyContainer}>
+        <View style={styles.sliderContainer}>
+          <AppIntroSlider
+            renderItem={renderItem}
+            data={sliderCardItems}
+            bottomButton={false}
+          />
+        </View>
         {guestTabtems?.length &&
           guestTabtems.map((listItem, i) => (
             <View key={i} style={styles.cardContainer}>

@@ -7,20 +7,20 @@ type CardProps = {
   paragraph: string;
   imageElement: any;
 };
-const SliderCard = ({title, paragraph, imageElement}: CardProps) => {
+export const SliderCard = ({title, paragraph, imageElement}: CardProps) => {
   return (
     <>
       <Card>
-        <View style={styles.container}>
-          <Card.Content>
-            <Title>{title}</Title>
-            <Paragraph>{paragraph}</Paragraph>
-          </Card.Content>
-          <View>{imageElement}</View>
+        <View style={styles.cardContainer}>
+          <View style={styles.cardContent}>
+            <Card.Content>
+              <Title>{title}</Title>
+              <Paragraph>{paragraph}</Paragraph>
+            </Card.Content>
+          </View>
+          <View style={styles.cardImage}>{imageElement}</View>
         </View>
       </Card>
     </>
   );
 };
-
-export default SliderCard;
