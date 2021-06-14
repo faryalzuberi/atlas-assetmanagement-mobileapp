@@ -19,7 +19,7 @@ export const SliderCard = ({title, paragraph, imageElement}: CardProps) => {
         <View style={styles.cardContent}>
           <Card.Content>
             <Title style={{color: colorConstants.white}}>{title}</Title>
-            <Paragraph style={{fontSize: 11, color: colorConstants.white}}>
+            <Paragraph style={{fontSize: 7, color: colorConstants.white}}>
               {paragraph}
             </Paragraph>
           </Card.Content>
