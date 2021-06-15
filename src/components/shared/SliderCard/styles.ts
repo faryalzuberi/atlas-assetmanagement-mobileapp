@@ -4,15 +4,17 @@ export const styles = StyleSheet.create({
   cardContainer: {
     flex: 1,
     flexDirection: 'row',
-    paddingHorizontal: 10,
     paddingVertical: 20,
     margin: 5,
+    borderRadius: 8,
+    resizeMode: 'contain',
   },
   cardContent: {
-    flex: 2,
+    flex: 3,
     flexDirection: 'column',
   },
   cardImage: {
     flex: 1,
+    alignItems: 'flex-end',
   },
 });

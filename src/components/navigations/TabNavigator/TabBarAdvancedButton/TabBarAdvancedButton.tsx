@@ -19,7 +19,7 @@ export const TabBarAdvancedButton: React.FC<Props> = ({bgColor, ...props}) => (
       <LinearGradient
         colors={[colorConstants.primary, colorConstants.secondary]}
         style={styles.button}>
-        <AtlasLogoIcon />
+        <View>{<AtlasLogoIcon />}</View>
       </LinearGradient>
     </TouchableOpacity>
   </View>

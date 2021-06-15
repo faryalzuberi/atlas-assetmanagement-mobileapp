@@ -15,4 +15,8 @@ export const languageTxt: any = {
   returnsTxt: 'Returns',
   contactusTxt: 'Contact Us',
   newsTxt: 'News',
+  //HomeCard
+  homeCardtitle: 'Mutual Funds',
+  homeCarddescription:
+    'Atlas Asset Management offers conventional & shariah compliant mutual fund & investment plan suited for your investment need',
 };

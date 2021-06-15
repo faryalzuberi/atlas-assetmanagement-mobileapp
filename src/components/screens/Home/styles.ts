@@ -11,6 +11,11 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   sliderContainer: {
-    paddingBottom: 20,
+    paddingBottom: 7,
+  },
+  sliderPagination: {
+    flexDirection: 'row',
+    padding: 5,
+    alignSelf: 'center',
   },
 });
