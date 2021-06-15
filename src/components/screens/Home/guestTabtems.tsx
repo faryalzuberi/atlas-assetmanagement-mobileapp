@@ -11,7 +11,6 @@ import DownloadIcon from '../../../assets/Icons/GuestScreen/Download.svg';
 import BranchLocaterIcon from '../../../assets/Icons/GuestScreen/BranchLocater.svg';
 import InvestorEducationIcon from '../../../assets/Icons/GuestScreen/InvestorEducation.svg';
 import MediaGalleryIcon from '../../../assets/Icons/GuestScreen/MediaGallery.svg';
-import MutualFundsIcon from '../../../assets/Icons/GuestScreen/MutualFunds.svg';
 
 export const guestTabtems = [
   {

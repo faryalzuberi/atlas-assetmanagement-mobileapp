@@ -1,26 +1,31 @@
 import React from 'react';
 import {View} from 'react-native';
 import {Card, Title, Paragraph} from 'react-native-paper';
+import LinearGradient from 'react-native-linear-gradient';
 import {styles} from './styles';
+import {colorConstants} from '../../../utils/colorConstants';
 type CardProps = {
   title: string;
   paragraph: string;
   imageElement: any;
 };
+
 export const SliderCard = ({title, paragraph, imageElement}: CardProps) => {
   return (
     <>
-      <Card>
-        <View style={styles.cardContainer}>
-          <View style={styles.cardContent}>
-            <Card.Content>
-              <Title>{title}</Title>
-              <Paragraph>{paragraph}</Paragraph>
-            </Card.Content>
-          </View>
-          <View style={styles.cardImage}>{imageElement}</View>
+      <LinearGradient
+        colors={[colorConstants.primary, colorConstants.secondary]}
+        style={styles.cardContainer}>
+        <View style={styles.cardContent}>
+          <Card.Content>
+            <Title style={{color: colorConstants.white}}>{title}</Title>
+            <Paragraph style={{fontSize: 11, color: colorConstants.white}}>
+              {paragraph}
+            </Paragraph>
+          </Card.Content>
         </View>
-      </Card>
+        <View style={styles.cardImage}>{imageElement}</View>
+      </LinearGradient>
     </>
   );
 };
