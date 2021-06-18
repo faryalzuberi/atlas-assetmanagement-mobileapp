@@ -6,15 +6,16 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
     paddingVertical: 20,
     margin: 5,
-    borderRadius: 8,
-    resizeMode: 'contain',
+    borderRadius: 20,
   },
   cardContent: {
-    flex: 3,
+    flex:2,
     flexDirection: 'column',
+    justifyContent: 'center',
   },
   cardImage: {
     flex: 1,
-    alignItems: 'flex-end',
+    flexDirection: 'column',
+    justifyContent: 'center',
   },
 });

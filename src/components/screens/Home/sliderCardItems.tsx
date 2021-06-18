@@ -10,8 +10,8 @@ export const sliderCardItems = [
     paragraph: languageTxt.homeCarddescription,
     imageElement: (
       <MutualFundsIcon
-        width={'150'}
-        height={'100'}
+        width={'90%'}
+        height={'100%'}
         fill={colorConstants.white}
       />
     ),
@@ -22,8 +22,8 @@ export const sliderCardItems = [
     paragraph: languageTxt.homeCarddescription,
     imageElement: (
       <MutualFundsIcon
-        width={'150'}
-        height={'100'}
+        width={'90%'}
+        height={'100%'}
         fill={colorConstants.white}
       />
     ),

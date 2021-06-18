@@ -19,12 +19,14 @@ export const SliderCard = ({title, paragraph, imageElement}: CardProps) => {
         <View style={styles.cardContent}>
           <Card.Content>
             <Title style={{color: colorConstants.white}}>{title}</Title>
-            <Paragraph style={{fontSize: 7, color: colorConstants.white}}>
+            <Paragraph style={{fontSize: 7, lineHeight: 12, textAlign: 'justify', color: colorConstants.white}}>
               {paragraph}
             </Paragraph>
           </Card.Content>
         </View>
-        <View style={styles.cardImage}>{imageElement}</View>
+        <View style={styles.cardImage}>
+          {imageElement}
+        </View>
       </LinearGradient>
     </>
   );
