@@ -41,7 +41,7 @@ export const AppIntroCustomSlider = ({setShowRealApp}: any) => {
         style={styles.bodyContainer}>
           {item.image}
           <View style={styles.descriptionContainer}>
-         <Text style={{fontSize: 11.5}}>{item.description}</Text>
+         <Text style={{fontSize: 11}}>{item.description}</Text>
           </View>
       </View>
       </View>

@@ -6,7 +6,7 @@ import LinearGradient from 'react-native-linear-gradient';
 import {styles} from './styles';
 import {TabBg} from '../svg';
 import {colorConstants} from '../../../../utils/colorConstants';
-import AtlasLogoIcon from '../../../../assets/Icons/Logo/AtlasLogoIcon.svg';
+import Home from '../../../../assets/Icons/GuestNavigation/Home.svg';
 
 type Props = BottomTabBarButtonProps & {
   bgColor?: string;
@@ -19,7 +19,7 @@ export const TabBarAdvancedButton: React.FC<Props> = ({bgColor, ...props}) => (
       <LinearGradient
         colors={[colorConstants.primary, colorConstants.secondary]}
         style={styles.button}>
-        <AtlasLogoIcon  />
+        <Home width={'100%'} height={'35'}  />
       </LinearGradient>
     </TouchableOpacity>
   </View>
