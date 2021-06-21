@@ -8,7 +8,7 @@ export const styles = StyleSheet.create({
         paddingVertical: 10,
         borderRadius: 10,
         marginTop: 10,
-        marginBottom: 10,
+        
       },
       imageContainer:{
         flex:1,
