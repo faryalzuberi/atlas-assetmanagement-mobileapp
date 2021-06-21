@@ -59,6 +59,7 @@ export const TabNavigator: React.FC<Props> = ({barColor}) => (
       showIcon: true,
       activeTintColor: colorConstants.primary,
       inactiveTintColor: colorConstants.navInactiveTxt,
+      keyboardHidesTabBar: true,
       style: styles.navigator,
       tabStyle: {
         backgroundColor: colorConstants.white,
