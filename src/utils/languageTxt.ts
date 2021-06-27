@@ -32,4 +32,20 @@ export const languageTxt: any = {
   investorEducationTxt: 'Investor Education',
   mediaGalleryTxt: 'Media Gallery',
   mutualFundsTxt: 'Mutual Funds',
+  // AboutUsScreen
+  visionMissionTxt: 'Vision / Mission',
+  introductionTxt: 'Introduction',
+  boardOfDirectorsTxt: 'Board of Directors',
+  managementTeamTxt: 'Management Team',
+  // WhatWeOfferScreen
+  atlasFundsTxt: 'Atlas Funds',
+  atlasMerajTxt: 'Atlas Meraj',
+  atlasPensionsTxt: 'Atlas Pensions',
+  investmentPlansTxt: 'Investment Plans',
+  allocationPlansTxt: 'Allocation Plans',
+  capitalPreservationPlanTxt: 'Capital Preservation Plan',
+  investmentAdvisoryServicesTxt: 'Investment Advisory Services',
+
+  // Type
+  dashboardGuestUser: 'dashboardGuestUser',
 };
