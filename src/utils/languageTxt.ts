@@ -45,6 +45,11 @@ export const languageTxt: any = {
   allocationPlansTxt: 'Allocation Plans',
   capitalPreservationPlanTxt: 'Capital Preservation Plan',
   investmentAdvisoryServicesTxt: 'Investment Advisory Services',
+  // Atlas Funds
+  atlasMoneyMarketTxt: 'Atlas Money Market Fund',
+  atlasSovereignFundTxt: 'Atlas Sovereign Fund',
+  atlasIncomeFundTxt: 'Atlas Income Fund ',
+  atlasStockMarketFundTxt: 'Atlas Stock Market Fund ',
 
   // Type
   dashboardGuestUser: 'dashboardGuestUser',

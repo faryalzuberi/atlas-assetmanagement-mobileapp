@@ -2,7 +2,7 @@ import React from 'react';
 
 import ModalStackScreen from '../../shared/ModalStackScreen/ModalStackScreen';
 import {GuestHomeModal} from '../../modals/GuestHomeModal';
-
+import { AtlasFunds } from '../../modals/GuestHomeModal/WhatWeOffer/AtlasFunds';
 import {AboutUs} from '../../modals/GuestHomeModal/AboutUs';
 import {VisionMission} from '../../modals/GuestHomeModal/AboutUs/VisionMission';
 import {Introduction} from '../../modals/GuestHomeModal/AboutUs/Introduction';
@@ -51,11 +51,18 @@ export const Home = ({navigation}: any) => {
       handleOnBack: () => navigation.navigate('AboutUs'),
     },
     // End AboutUs
+    //Start What We Offer
     {
       name: 'WhatWeOffer',
       component: WhatWeOffer,
       backButton: true,
       handleOnBack: () => navigation.navigate('GuestHomeModal'),
+    },
+    {
+      name: 'AtlasFunds',
+      component: AtlasFunds,
+      backButton: true,
+      handleOnBack: () => navigation.navigate('WhatWeOffer'),
     },
   ];
   return <ModalStackScreen items={items} />;

@@ -5,10 +5,12 @@ import {dimensionConstants} from '../../../utils/dimensionConstants';
 export const styles = StyleSheet.create({
   cardContainer: {
     flex: 1,
+    
   },
   card: {
     flex: 1,
     borderRadius: 12,
+    
   },
   cardContent: {
     justifyContent: 'center',
