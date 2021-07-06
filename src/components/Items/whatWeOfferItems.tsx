@@ -86,3 +86,106 @@ export const whatWeOfferItems = [
     path: 'InvestmentAdvisoryServices',
   },
 ];
+
+export const atlasFundsItems = [
+  {
+    title: languageTxt.atlasMoneyMarketFundTxt,
+    path: 'AtlasMoneyMarketFund',
+  },
+  {
+    title: languageTxt.atlasSovereignFundTxt,
+    path: 'AtlasSovereignFund',
+  },
+  {
+    title: languageTxt.atlasIncomeFundTxt,
+    path: 'AtlasIncomeFund',
+  },
+  {
+    title: languageTxt.atlasStockMarketFundTxt,
+    path: 'AtlasStockMarketFund',
+  },
+];
+
+export const atlasMerajItems = [
+  {
+    title: languageTxt.atlasIslamicMoneyMarketFundTxt,
+    path: 'AtlasIslamicMoneyMarketFund',
+  },
+  {
+    title: languageTxt.atlasIslamicIncomeFundTxt,
+    path: 'AtlasIslamicIncomeFund',
+  },
+  {
+    title: languageTxt.atlasIslamicStockFundTxt,
+    path: 'AtlasIslamicStockFund',
+  },
+  {
+    title: languageTxt.atlasIslamicFundofFundsTxt,
+    path: 'AtlasIslamicFundofFunds',
+  },
+];
+
+export const atlasPensionsItems = [
+  {
+    title: languageTxt.atlasPensionFundTxt,
+    path: 'AtlasPensionFund',
+  },
+  {
+    title: languageTxt.atlasPensionIslamicFundTxt,
+    path: 'AtlasPensionIslamicFund',
+  },
+  {
+    title: languageTxt.atlasPensionsIncomePaymentPlansTxt,
+    path: 'AtlasPensionsIncomePaymentPlans',
+  },
+];
+
+export const investmentPlansItems = [
+  {
+    title: languageTxt.atlasBachatPlanTxt,
+    path: 'AtlasBachatPlan',
+  },
+  {
+    title: languageTxt.atlasBachatBalancedPlanTxt,
+    path: 'AtlasBachatBalancedPlan',
+  },
+  {
+    title: languageTxt.atlasBachatGrowthPlanTxt,
+    path: 'AtlasBachatGrowthPlan',
+  },
+  {
+    title: languageTxt.atlasBachatIslamicPlanTxt,
+    path: 'AtlasBachatIslamicPlan',
+  },
+  {
+    title: languageTxt.atlasBachatBalancedIslamicPlanTxt,
+    path: 'AtlasBachatBalancedIslamicPlan',
+  },
+  {
+    title: languageTxt.atlasBachatGrowthIslamicPlanTxt,
+    path: 'AtlasBachatGrowthIslamicPlan',
+  },
+  {
+    title: languageTxt.systematicPayoutTxt,
+    path: 'SystematicPayout',
+  },
+];
+
+export const allocationPlansItems = [
+  {
+    title: languageTxt.atlasAggressiveAllocationIslamicPlanTxt,
+    path: 'AtlasAggressiveAllocationIslamicPlan',
+  },
+  {
+    title: languageTxt.atlasModerateAllocationIslamicPlanTxt,
+    path: 'AtlasModerateAllocationIslamicPlan',
+  },
+  {
+    title: languageTxt.atlasConservativeAllocationIslamicPlanTxt,
+    path: 'AtlasConservativeAllocationIslamicPlan',
+  },
+  {
+    title: languageTxt.atlasIslamicDividendPlanTxt,
+    path: 'AtlasIslamicDividendPlan',
+  },
+];

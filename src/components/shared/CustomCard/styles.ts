@@ -14,6 +14,15 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
+
+  listTitle: {
+    textAlign: 'center',
+    fontSize: 14,
+    lineHeight: 20,
+    fontWeight: '700',
+    color: colorConstants.primary,
+  },
+
   dashboardTitle: {
     textAlign: 'center',
     fontSize: 12,
@@ -25,9 +34,6 @@ export const styles = StyleSheet.create({
 
   linearCard: {
     borderRadius: 10,
-  },
-  cardTransparent: {
-    backgroundColor: colorConstants.transparent,
   },
 
   carouselContent: {
@@ -60,7 +66,8 @@ export const styles = StyleSheet.create({
     paddingBottom: 5,
   },
   headerTitle: {
-    fontWeight: '800',
+    fontSize: 18,
+    fontWeight: '700',
     color: colorConstants.white,
   },
 
@@ -73,7 +80,18 @@ export const styles = StyleSheet.create({
   detailTitle: {
     color: colorConstants.primary,
   },
+  detailDesignation: {
+    color: colorConstants.red,
+    fontSize: 15,
+    lineHeight: 16,
+    marginBottom: 8,
+  },
   detailParagraph: {
     textAlign: 'justify',
+  },
+  detailImage: {
+    width: 110,
+    height: 135,
+    marginRight: 10,
   },
 });

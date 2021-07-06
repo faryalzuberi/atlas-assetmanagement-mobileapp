@@ -1,15 +1,26 @@
 import React from 'react';
+import {useQuery} from 'react-query';
 
-import {exampleItems} from '../../../../Items/exampleItems';
+import {Loader} from '../../../../shared/Loader';
 import {DetailList} from '../../../../shared/DetailList';
 import {languageTxt} from '../../../../../utils/languageTxt';
+import {getBoardOfDirectors} from '../../../../../config/api/aboutUs';
 
 export const BoardOfDirectors = () => {
+  const {isLoading, error, data, refetch}: any = useQuery(
+    'getBoardOfDirectors',
+    getBoardOfDirectors,
+    {select: (boardOfDirectors: any) => boardOfDirectors?.data?.members},
+  );
+
   return (
-    <DetailList
-      arrayList={exampleItems}
-      interval={1}
-      headerTitle={languageTxt.boardOfDirectorsTxt}
-    />
+    <>
+      <Loader loader={isLoading} />
+      <DetailList
+        arrayList={data}
+        interval={1}
+        headerTitle={languageTxt.boardOfDirectorsTxt}
+      />
+    </>
   );
 };

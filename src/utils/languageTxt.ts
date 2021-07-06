@@ -37,7 +37,8 @@ export const languageTxt: any = {
   introductionTxt: 'Introduction',
   boardOfDirectorsTxt: 'Board of Directors',
   managementTeamTxt: 'Management Team',
-  // WhatWeOfferScreen
+
+  // Start WhatWeOfferScreen
   atlasFundsTxt: 'Atlas Funds',
   atlasMerajTxt: 'Atlas Meraj',
   atlasPensionsTxt: 'Atlas Pensions',
@@ -45,6 +46,37 @@ export const languageTxt: any = {
   allocationPlansTxt: 'Allocation Plans',
   capitalPreservationPlanTxt: 'Capital Preservation Plan',
   investmentAdvisoryServicesTxt: 'Investment Advisory Services',
+  // Atlas Funds
+  atlasMoneyMarketFundTxt: 'Atlas Money Market Fund',
+  atlasSovereignFundTxt: 'Atlas Sovereign Fund',
+  atlasIncomeFundTxt: 'Atlas Income Fund',
+  atlasStockMarketFundTxt: 'Atlas Stock Market Fund',
+  // Atlas Meraj
+  atlasIslamicMoneyMarketFundTxt: 'Atlas Islamic Money Market Fund',
+  atlasIslamicIncomeFundTxt: 'Atlas Islamic Income Fund',
+  atlasIslamicStockFundTxt: 'Atlas Islamic Stock Fund',
+  atlasIslamicFundofFundsTxt: 'Atlas Islamic Fund of Funds',
+  // Atlas Pensions
+  atlasPensionFundTxt: 'Atlas Pension Fund',
+  atlasPensionIslamicFundTxt: 'Atlas Pension Islamic Fund',
+  atlasPensionsIncomePaymentPlansTxt: 'Atlas Pensions Income Payment Plans',
+  // Atlas Investment Plans
+  atlasBachatPlanTxt: 'Atlas Bachat Plan',
+  atlasBachatBalancedPlanTxt: 'Atlas Bachat Balanced Plan',
+  atlasBachatGrowthPlanTxt: 'Atlas Bachat Growth Plan',
+  atlasBachatIslamicPlanTxt: 'Atlas Bachat Islamic Plan',
+  atlasBachatBalancedIslamicPlanTxt: 'Atlas Bachat Balanced Islamic Plan',
+  atlasBachatGrowthIslamicPlanTxt: 'Atlas Bachat Growth Islamic Plan',
+  systematicPayoutTxt: 'Systematic Payout & Systematic Withdrawal Plan/Option',
+  // Allocation Plans
+  atlasAggressiveAllocationIslamicPlanTxt:
+    'Atlas Aggressive Allocation Islamic Plan',
+  atlasModerateAllocationIslamicPlanTxt:
+    'Atlas Moderate Allocation Islamic Plan',
+  atlasConservativeAllocationIslamicPlanTxt:
+    'Atlas Conservative Allocation Islamic Plan',
+  atlasIslamicDividendPlanTxt: 'Atlas Islamic Dividend Plan',
+  // End WhatWeOfferScreen
 
   // Type
   dashboardGuestUser: 'dashboardGuestUser',

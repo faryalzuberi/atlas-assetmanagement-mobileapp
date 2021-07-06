@@ -3,8 +3,6 @@ import {ScrollView, View} from 'react-native';
 
 import {styles} from './styles';
 import {CustomCard} from '../CustomCard';
-import {DashboardList} from '../DashboardList';
-import {IntroSilder} from '../IntroSilder';
 
 interface modalLayoutsContainerProps {
   title: string;

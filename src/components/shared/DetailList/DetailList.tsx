@@ -14,7 +14,13 @@ interface detailListProps {
 
 const renderItem = ({item}: any) => (
   <View style={styles.menuCard}>
-    <CustomCard type={'detail'} title={item.title} paragraph={item.paragraph} />
+    <CustomCard
+      type={'detail'}
+      title={item.name}
+      designation={item?.designation && item.designation}
+      profile_image={item?.profile_image && item.profile_image}
+      paragraph={item.description}
+    />
   </View>
 );
 
