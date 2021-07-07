@@ -1,16 +1,18 @@
 import React from 'react';
-import {atlasFundsItems} from '../../../../Items/atlasFundsItems';
+
 import {languageTxt} from '../../../../../utils/languageTxt';
 import {colorConstants} from '../../../../../utils/colorConstants';
-import {DashboardLayoutsContainer} from '../../../../shared/DashboardLayoutsContainer';
-import AtlasFund from '../../../../../assets/icons/what_we_offer_screen/atlasFund.svg';
-export const AtlasFunds = () =>{
-    return(
-        <>
-        <DashboardLayoutsContainer
+import {TitleList} from '../../../../shared/TitleList';
+import {atlasFundsItems} from '../../../../Items/whatWeOfferItems';
+
+import WhatWeOfferIcon from '../../../../../assets/icons/guest_screen/whatWeOffer.svg';
+
+export const AtlasFunds = () => {
+  return (
+    <TitleList
       title={languageTxt.atlasFundsTxt}
       icon={
-        <AtlasFund
+        <WhatWeOfferIcon
           width={'60'}
           height={'60'}
           fill={colorConstants.white}
@@ -19,6 +21,5 @@ export const AtlasFunds = () =>{
       arrayList={atlasFundsItems}
       interval={1}
     />
-        </>
-    )
-}
+  );
+};

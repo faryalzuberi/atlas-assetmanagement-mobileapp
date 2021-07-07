@@ -7,7 +7,7 @@ export const styles = StyleSheet.create({
     margin: 10,
   },
   flatList: {
-    marginBottom: 85,
+    marginBottom: 45,
   },
 
   header: {
@@ -21,6 +21,10 @@ export const styles = StyleSheet.create({
     color: colorConstants.primary,
   },
   headerParagraph: {
+    paddingHorizontal: 20,
+    fontSize: 12,
+    lineHeight: 18,
+    color: colorConstants.gray,
     textAlign: 'justify',
   },
   titleLine: {

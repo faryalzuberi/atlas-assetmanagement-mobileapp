@@ -10,12 +10,63 @@ export const styles = StyleSheet.create({
   card: {
     flex: 1,
     borderRadius: 12,
+    backgroundColor: colorConstants.white,
+    
+  },
+  activeCard: {
+    flex: 1,
+    borderRadius: 12,
+    backgroundColor: colorConstants.lightGray,
     
   },
   cardContent: {
     justifyContent: 'center',
     alignItems: 'center',
   },
+  accordianContainer:{
+    backgroundColor: colorConstants.white,
+    marginHorizontal: '3%',
+    paddingVertical: 0
+    
+  },
+  accordianButtonLabelStyle:{
+    fontSize: 10,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  accordianButtonStyle:{
+    marginBottom: '2%',
+  },
+  accordianTitleStyle1:{
+    fontSize: 9, 
+    color: colorConstants.gray
+  },
+  accordianTitleStyle2:{
+    fontSize: 10, 
+    color: colorConstants.black
+  },
+  accordianDescriptionStyle:{
+    fontSize: 8, 
+    color: colorConstants.gray,
+    paddingTop: '1%', 
+    lineHeight: 14
+  },
+  accordianContainer2:{
+    backgroundColor: colorConstants.white,
+    marginHorizontal: '3%',
+    paddingVertical: 0,
+    borderBottomLeftRadius: 12,
+    borderBottomRightRadius: 12,
+  },
+
+  listTitle: {
+    textAlign: 'center',
+    fontSize: 14,
+    lineHeight: 20,
+    fontWeight: '700',
+    color: colorConstants.primary,
+  },
+
   dashboardTitle: {
     textAlign: 'center',
     fontSize: 12,
@@ -27,9 +78,6 @@ export const styles = StyleSheet.create({
 
   linearCard: {
     borderRadius: 10,
-  },
-  cardTransparent: {
-    backgroundColor: colorConstants.transparent,
   },
 
   carouselContent: {
@@ -62,7 +110,8 @@ export const styles = StyleSheet.create({
     paddingBottom: 5,
   },
   headerTitle: {
-    fontWeight: '800',
+    fontSize: 18,
+    fontWeight: '700',
     color: colorConstants.white,
   },
 
@@ -75,7 +124,18 @@ export const styles = StyleSheet.create({
   detailTitle: {
     color: colorConstants.primary,
   },
+  detailDesignation: {
+    color: colorConstants.red,
+    fontSize: 15,
+    lineHeight: 16,
+    marginBottom: 8,
+  },
   detailParagraph: {
     textAlign: 'justify',
+  },
+  detailImage: {
+    width: 110,
+    height: 135,
+    marginRight: 10,
   },
 });

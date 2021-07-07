@@ -8,6 +8,6 @@ export const styles = StyleSheet.create({
   bodyContainer: {
     flex: 1,
     flexDirection: 'column',
-    paddingBottom: 85,
+    paddingBottom: 45,
   },
 });

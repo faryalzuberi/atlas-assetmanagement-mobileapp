@@ -18,7 +18,7 @@ export const ContactUsForm = () => {
     <ModalLayoutsContainer
       title={languageTxt.contactusTxt}
       icon={
-        <ContactUsIcon width={'60'} height={'60'} fill={colorConstants.white} />
+        <ContactUsIcon width={'40'} height={'40'} fill={colorConstants.white} />
       }
       body={
         <View style={styles.bodyContainer}>
