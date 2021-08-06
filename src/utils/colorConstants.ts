@@ -1,6 +1,7 @@
 export const colorConstants = {
   red: 'red',
   gray: 'gray',
+  lightGray: '#ededed',
   black: 'black',
   white: 'white',
   transparent: 'transparent',

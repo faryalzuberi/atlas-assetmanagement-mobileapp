@@ -1,13 +1,23 @@
 import {StyleSheet} from 'react-native';
 import { colorConstants } from '../../../utils/colorConstants';
 
-export const styles = (height: any) => StyleSheet.create({
+export const styles = (width: any) => StyleSheet.create({
     bodyContainer:{
-        width: '45%',
+        width: width,
         justifyContent: 'center',
-        height: height,
+        height: 40,
         borderRadius: 20,
         marginTop: 30,
+        alignSelf: 'center'
+    },
+    buttonContainer:{
+        justifyContent: 'center',
+        alignItems: 'center',
+        flexDirection: 'row'
+    },
+    buttonText:{
+        color: colorConstants.white,
+        fontSize: 16
     }
 });
 

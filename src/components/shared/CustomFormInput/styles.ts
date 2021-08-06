@@ -8,6 +8,7 @@ export const styles = StyleSheet.create({
     borderColor: colorConstants.white,
     borderRadius: dimensionConstants.borderRadius,
     overflow: 'hidden',
+     marginTop: 10,
 
     shadowOffset: {
       width: dimensionConstants.shadowOffsetWidth,
@@ -22,7 +23,7 @@ export const styles = StyleSheet.create({
     borderColor: colorConstants.red,
     borderRadius: dimensionConstants.borderRadius,
     overflow: 'hidden',
-
+    marginTop: 10,
     shadowOffset: {
       width: dimensionConstants.shadowOffsetWidth,
       height: dimensionConstants.shadowOffsetHeight,
@@ -36,5 +37,6 @@ export const styles = StyleSheet.create({
     fontSize: dimensionConstants.inputTxtSize,
     backgroundColor: colorConstants.white,
     marginVertical: -2,
+
   },
 });

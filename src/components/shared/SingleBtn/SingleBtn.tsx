@@ -5,22 +5,24 @@ import { colorConstants } from '../../../utils/colorConstants';
 import { styles } from './styles';
 type TextInputProps = {
     text: string;
-    height: any,
+    width: any,
+    color?: any,
+    RightIcon?: any,
+    onPressCB?: any
   };
 
-const SingleBtn = ({text, height}: TextInputProps) => {
+const SingleBtn = ({text, width, RightIcon, color, onPressCB}: TextInputProps) => {
 
     return(
         <LinearGradient
-        colors={[colorConstants.primary, colorConstants.secondary]}
-        style={styles(height).bodyContainer} >
-            <TouchableOpacity style={{justifyContent: 'center',alignItems: 'center',}}>
-            <Text style={{color: colorConstants.white, fontSize: 18}}>{text}</Text>
+        colors={color ? [color,color] :[colorConstants.primary, colorConstants.secondary]}
+        style={styles(width).bodyContainer} >
+            <TouchableOpacity style={styles(width).buttonContainer} onPress={()=> onPressCB()}>
+                {RightIcon && RightIcon}
+            <Text style={styles(width).buttonText}>{text}</Text>
             </TouchableOpacity>
         </LinearGradient>
-        
     )
-    
 }
 
 export default SingleBtn;

@@ -45,6 +45,10 @@ import {AtlasConservativeAllocationIslamicPlan} from '../../modals/GuestHomeModa
 import {AtlasModerateAllocationIslamicPlan} from '../../modals/GuestHomeModal/WhatWeOffer/AllocationPlans/AtlasModerateAllocationIslamicPlan';
 import {AtlasAggressiveAllocationIslamicPlan} from '../../modals/GuestHomeModal/WhatWeOffer/AllocationPlans/AtlasAggressiveAllocationIslamicPlan';
 import {AtlasIslamicDividendPlan} from '../../modals/GuestHomeModal/WhatWeOffer/AllocationPlans/AtlasIslamicDividendPlan';
+import {MutualFundsAccountOpening} from '../../modals/GuestHomeModal/NewAccount/MutualFundsAccountOpening'
+//NewAccount
+import {NewAccount} from '../../modals/GuestHomeModal/NewAccount';
+import { SahulatSarmayakariAccountOpening } from '../../modals/GuestHomeModal/NewAccount/SahulatSarmayakariAccountOpening';
 
 export const Home = ({navigation}: any) => {
   const items = [
@@ -274,6 +278,25 @@ export const Home = ({navigation}: any) => {
     },
 
     // End WhatWeOffer
+     // New Account
+    {
+      name: 'NewAccount',
+      component: NewAccount,
+      backButton: true,
+      handleOnBack: () => navigation.navigate('GuestHomeModal'),
+    },
+    {
+      name: 'MutualFundsAccountOpening',
+      component: MutualFundsAccountOpening,
+      backButton: true,
+      handleOnBack: () => navigation.navigate('NewAccount'),
+    },
+    {
+      name: 'SahulatSarmayakariAccountOpening',
+      component: SahulatSarmayakariAccountOpening,
+      backButton: true,
+      handleOnBack: () => navigation.navigate('NewAccount'),
+    },
   ];
   return (
     <SafeAreaView style={{flex: 1}}>

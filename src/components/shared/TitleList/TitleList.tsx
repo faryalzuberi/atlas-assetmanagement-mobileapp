@@ -13,7 +13,7 @@ interface titleListProps {
 
 const renderItem = ({item}: any) => (
   <View style={styles.menuCard}>
-    <CustomCard type={'list'} title={item.title} path={item.path} />
+     <CustomCard type={(item?.type)? 'accordian':'list'} title={item.title} path={item.path} icon={item.icon} paragraph={item.description} subTitle={item.subTitle} subTitleDescription={item.subTitleDescription} titleNumberOfLines={item.titleNumberOfLines} />
   </View>
 );
 
