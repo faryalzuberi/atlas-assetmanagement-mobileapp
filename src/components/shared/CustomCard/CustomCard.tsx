@@ -8,6 +8,7 @@ import { Button } from 'react-native-paper';
 import { styles } from './styles';
 import { colorConstants } from '../../../utils/colorConstants';
 import { Image } from 'react-native';
+import { languageTxt } from '../../../utils/languageTxt';
 
 interface customCardProps {
   type: string;
@@ -18,7 +19,9 @@ interface customCardProps {
   paragraph?: string;
   path?: string;
   subTitle?: string;
-  subTitleDescription?: string
+  subTitleDescription?: string;
+  titleNumberOfLines?: number;
+  subType?: string;
 }
 export const CustomCard = ({
   type,
@@ -27,8 +30,10 @@ export const CustomCard = ({
   designation,
   profile_image,
   paragraph,
+  titleNumberOfLines,
   path,
   subTitle,
+  subType,
   subTitleDescription
 }: customCardProps) => {
   const navigation = useNavigation();
@@ -57,17 +62,28 @@ export const CustomCard = ({
             <List.Accordion
               style={(expanded) ? styles.activeCard : styles.card}
               title={title}
+              titleNumberOfLines={titleNumberOfLines? titleNumberOfLines: 1}
               titleStyle={{color: colorConstants.primary}}
               right={expanded ? () => (icon.negative) : () => (icon.positive)}
               expanded={expanded}
               onPress={handlePress}
             >
-              <List.Item style={styles.accordianContainer} title={paragraph} titleStyle={styles.accordianTitleStyle1} titleNumberOfLines={5} />
-              <List.Item style={styles.accordianContainer} title={subTitle} titleStyle={styles.accordianTitleStyle2} description={subTitleDescription} descriptionStyle={styles.accordianDescriptionStyle} descriptionNumberOfLines={10} />
-              <List.Item title='' style={styles.accordianContainer2} right={() => (<Button color={colorConstants.red} style={styles.accordianButtonStyle} labelStyle={styles.accordianButtonLabelStyle} mode="contained" onPress={path ? () => navigation.navigate(path) : () => { }} >Click Here</Button>)} />
+              {
+                (subType == 'documentsAccordian') ? (<View>
+
+                  <List.Item title='' style={styles.accordianContainer2} right={() => (<Button color={colorConstants.red} style={styles.accordianButtonStyle} labelStyle={styles.accordianButtonLabelStyle} mode={languageTxt.contained} onPress={path ? () => navigation.navigate(path) : () => { }} >Upload New File</Button>)} />
+                </View>) : (
+                  <View>
+                  <List.Item style={styles.accordianContainer} title={paragraph} titleStyle={styles.accordianTitleStyle1} titleNumberOfLines={5} />
+                  <List.Item style={styles.accordianContainer} title={subTitle} titleStyle={styles.accordianTitleStyle2} description={subTitleDescription} descriptionStyle={styles.accordianDescriptionStyle} descriptionNumberOfLines={10} />
+                  <List.Item title='' style={styles.accordianContainer2} right={() => (<Button color={colorConstants.red} style={styles.accordianButtonStyle} labelStyle={styles.accordianButtonLabelStyle} mode={languageTxt.contained} onPress={path ? () => navigation.navigate(path) : () => { }} >Click Here</Button>)} />
+                  </View>
+                )
+              }
+             
             </List.Accordion>
           </List.Section>
-
+          
         </TouchableOpacity>
       )
       }

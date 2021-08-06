@@ -48,7 +48,7 @@ export const ContactUsForm = () => {
               height={150}
               multipleLine={true}
             />
-            <SingleBtn text="Submit" height={40} />
+            <SingleBtn text="Submit" width='45%' />
             <View style={styles.iconBtn}>
               <IconBtn
                 height={30}

@@ -36,6 +36,7 @@ export const styles = StyleSheet.create({
   },
   accordianButtonStyle:{
     marginBottom: '2%',
+    marginTop: '2%'
   },
   accordianTitleStyle1:{
     fontSize: 9, 
@@ -110,7 +111,7 @@ export const styles = StyleSheet.create({
     paddingBottom: 5,
   },
   headerTitle: {
-    fontSize: 18,
+    fontSize: 13,
     fontWeight: '700',
     color: colorConstants.white,
   },

@@ -6,6 +6,7 @@ import {styles} from './styles';
 const CustomFormInput = ({
   placeHolder,
   LeftIcon,
+  mode,
   RightIcon,
   name,
   value,
@@ -22,6 +23,7 @@ const CustomFormInput = ({
         label={placeHolder}
         returnKeyType={'done'}
         value={value}
+        mode={mode ? mode : 'flat'}
         style={styles.input}
         underlineColor="transparent"
         left={LeftIcon && <TextInput.Icon name={LeftIcon} />}

@@ -9,15 +9,15 @@ import Negative from '../../assets/icons/new_account/negative.svg'
       icon: {
         positive: (
           <Positive
-            width={'10'}
-            height={'10'}
+            width={'15'}
+            height={'15'}
             fill={colorConstants.primary}
           />
         ),
         negative: (
           <Negative
-            width={'10'}
-            height={'10'}
+            width={'15'}
+            height={'15'}
             fill={colorConstants.primary}
           />
         ),
@@ -33,15 +33,15 @@ import Negative from '../../assets/icons/new_account/negative.svg'
       icon: {
         positive: (
           <Positive
-            width={'10'}
-            height={'10'}
+            width={'15'}
+            height={'15'}
             fill={colorConstants.primary}
           />
         ),
         negative: (
           <Negative
-            width={'10'}
-            height={'10'}
+            width={'15'}
+            height={'15'}
             fill={colorConstants.primary}
           />
         ),
@@ -51,21 +51,22 @@ import Negative from '../../assets/icons/new_account/negative.svg'
       subTitleDescription: languageTxt.onlineSahulatSarmayakariAccountSubTitleDescription,
       path: languageTxt.onlineSahulatSarmayakariAccountpath,
       type: languageTxt.onlineSahulatSarmayakariAccountType,
+      titleNumberOfLines: 2,
     },
     {
         title: languageTxt.onlineRoshanDigitalAccount,
         icon: {
           positive: (
             <Positive
-              width={'10'}
-              height={'10'}
+              width={'15'}
+              height={'15'}
               fill={colorConstants.primary}
             />
           ),
           negative: (
             <Negative
-              width={'10'}
-              height={'10'}
+              width={'15'}
+              height={'15'}
               fill={colorConstants.primary}
             />
           ),
