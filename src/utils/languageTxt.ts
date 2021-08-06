@@ -77,7 +77,7 @@ export const languageTxt: any = {
     'Atlas Conservative Allocation Islamic Plan',
   atlasIslamicDividendPlanTxt: 'Atlas Islamic Dividend Plan',
   // End WhatWeOfferScreen
- //NewAccount
+  //NewAccount
  createAccount: 'Create Account',
  onlineMutualFundsAccount: 'Online Mutual Funds Account',
  onlineSahulatSarmayakariAccount: 'Online Sahulat SarmayaKari Account',
@@ -255,8 +255,6 @@ nominee2: 'Nominee 2',
 nominee3: 'Nominee 3',
 nomineeRelation: 'Nominee Relation',
 stAddress: 'St Address',
-
-
 
   // Type
   dashboardGuestUser: 'dashboardGuestUser',

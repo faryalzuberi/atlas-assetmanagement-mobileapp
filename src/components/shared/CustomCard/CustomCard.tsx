@@ -46,7 +46,7 @@ export const CustomCard = ({
         <TouchableOpacity
           activeOpacity={0.9}
           style={styles.cardContainer}
-          onPress={path ? () => navigation.navigate(path) : () => { }}>
+           onPress={path ? () => navigation.navigate(path) : () => { }}>
           <Card style={styles.card}>
             <Card.Content style={styles.cardContent}>
               {title && <Title style={styles.listTitle}>{title}</Title>}
@@ -54,7 +54,7 @@ export const CustomCard = ({
           </Card>
         </TouchableOpacity>
       )}
-      {type == 'accordian' && (
+            {type == 'accordian' && (
         <TouchableOpacity
           activeOpacity={0.9}
           >

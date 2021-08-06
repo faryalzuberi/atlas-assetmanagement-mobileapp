@@ -278,8 +278,7 @@ export const Home = ({navigation}: any) => {
     },
 
     // End WhatWeOffer
-
-    // New Account
+     // New Account
     {
       name: 'NewAccount',
       component: NewAccount,
@@ -298,7 +297,6 @@ export const Home = ({navigation}: any) => {
       backButton: true,
       handleOnBack: () => navigation.navigate('NewAccount'),
     },
-
   ];
   return (
     <SafeAreaView style={{flex: 1}}>
