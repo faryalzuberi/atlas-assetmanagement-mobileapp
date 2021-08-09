@@ -25,9 +25,34 @@ export const styles = StyleSheet.create({
     paddingHorizontal: 5,
     marginTop: 10
   },
-  table: {
+  confirmationContainer:{
     flex: 1,
-    backgroundColor: colorConstants.white,
-    flexDirection: 'row'
+    marginTop: 10,
+    flexDirection: 'row',
+  
+  },
+  confirmationTextStyle:{
+    color: colorConstants.black,
+    fontSize: 8,
+    left: 3,
+    flexWrap: 'wrap'
+  },
+  tableContainer: 
+  { flex: 1,
+    backgroundColor: '#fff'
+   },
+   table: {
+    borderWidth: 1,
+    borderRadius: 15
+   },
+  head: { 
+    flex: 1,
+    backgroundColor: colorConstants.lightGray
+   },
+  text: 
+  {
+    fontSize: 7,
+     margin: 6 
   }
+
 });

@@ -24,6 +24,16 @@ export const styles = StyleSheet.create({
     backgroundColor: colorConstants.white,
     paddingHorizontal: 5,
     marginTop: 10
+  },
+  confirmationContainer:{
+    flex: 1,
+    marginTop: 10,
+    flexDirection: 'row',
+  },
+  confirmationTextStyle:{
+    color: colorConstants.black,
+    fontSize: 8,
+    left: 3,
   }
 
 });

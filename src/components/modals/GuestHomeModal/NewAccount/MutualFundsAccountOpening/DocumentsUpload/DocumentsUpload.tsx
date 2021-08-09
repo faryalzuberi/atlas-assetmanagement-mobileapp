@@ -29,7 +29,7 @@ export const DocumentsUpload = () => {
                             fill={colorConstants.primary}
                         />
                     ),
-                }}  titleNumberOfLines={2} />
+                }}  titleNumberOfLines={3} />
                 <CustomCard type={languageTxt.accordian} title={languageTxt.sourceOfIncome} subType={languageTxt.documentsAccordian} icon={{
                     positive: (
                         <Positive

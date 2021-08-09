@@ -45,6 +45,11 @@ export const Fatca = () => {
                     height={'20'}
                     fill={colorConstants.black} />)} />
                 <CustomFormInput placeHolder={languageTxt.tinNo} />
+                <View style={styles.confirmationContainer}>
+                    <Text style={styles.confirmationTextStyle}>{languageTxt.fatcaReviewA}</Text>
+                    <Text style={styles.confirmationTextStyle}>{languageTxt.fatcaReviewB}</Text>
+                    <Text style={styles.confirmationTextStyle}>{languageTxt.fatcaReviewC}</Text>
+                </View>
                 <SingleBtn text={languageTxt.next} width='40%'  onPressCB={()=>{}} />
             </View>
         </ScrollView>

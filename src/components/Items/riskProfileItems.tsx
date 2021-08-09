@@ -1,5 +1,5 @@
 import React from 'react';
-import {languageTxt} from '../../utils/languageTxt';
+import { languageTxt } from '../../utils/languageTxt';
 
 export const list1 = [
     { id: 1, value: languageTxt.veryHigh, name: languageTxt.veryHigh, selected: false },
@@ -38,18 +38,13 @@ export const list5 = [
     { id: 4, value: languageTxt.likelyWorse, name: languageTxt.likelyWorse, selected: false },
 ]
 
-export const tableHeader= [
-    {key: 1, value: languageTxt.typeOfInvester },
-    {key: 2, value: languageTxt.score },
-    {key: 3, value: languageTxt.riskProfile },
-    {key: 4, value: languageTxt.suitableInvestmentScheme },
-    
-]
+export const tableHeader = [languageTxt.typeOfInvester, languageTxt.score, languageTxt.riskProfile, languageTxt.suitableInvestmentScheme]
+
 
 export const tableContent = [
-    {key:1, rowValue1: languageTxt.securedOriented, rowValue2: languageTxt.score1, rowValue3: languageTxt.veryLow, rowValue4: languageTxt.moneyMarketScheme},
-    {key:2, rowValue1: languageTxt.safetyOriented, rowValue2: languageTxt.score2, rowValue3: languageTxt.low, rowValue4: languageTxt.moneyMarketScheme2},
-    {key:3, rowValue1: languageTxt.balancedConservative, rowValue2: languageTxt.score3, rowValue3: languageTxt.medium, rowValue4: languageTxt.islamicDividendPlan},
-    {key:4, rowValue1: languageTxt.moderateGrowth, rowValue2: languageTxt.score4, rowValue3: languageTxt.medium, rowValue4: languageTxt.incomeFundAndInvestmentPlan},
-    {key:5, rowValue1: languageTxt.growthOriented, rowValue2: languageTxt.score5, rowValue3: languageTxt.high, rowValue4: languageTxt.equity},
+    [languageTxt.securedOriented, languageTxt.score1, languageTxt.veryLow, languageTxt.moneyMarketScheme],
+    [languageTxt.safetyOriented, languageTxt.score2, languageTxt.low, languageTxt.moneyMarketScheme2],
+    [languageTxt.balancedConservative, languageTxt.score3, languageTxt.medium, languageTxt.islamicDividendPlan],
+    [languageTxt.moderateGrowth, languageTxt.score4, languageTxt.medium, languageTxt.incomeFundAndInvestmentPlan],
+    [languageTxt.growthOriented, languageTxt.score5, languageTxt.high, languageTxt.equity],
 ]

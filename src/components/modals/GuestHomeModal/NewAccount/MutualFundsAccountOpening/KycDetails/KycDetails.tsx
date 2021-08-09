@@ -6,7 +6,7 @@ import { languageTxt } from '../../../../../../utils/languageTxt';
 import CustomFormInput from '../../../../../shared/CustomFormInput';
 import { styles } from './styles';
 import RightArrow from '../../../../../../assets/icons/new_account/rightArrow.svg';
-import CheckedCheckbox from '../../../../../../assets/icons/new_account/checkedCheckbox.png';
+import CheckedCheckbox from '../../../../../../assets/icons/new_account/checkedCheckbox.svg';
 import { CustomRadioButton } from '../../../../../shared/CustomRadioButton';
 import SingleBtn from '../../../../../shared/SingleBtn';
 export const KycDetails = () => {
@@ -37,22 +37,25 @@ export const KycDetails = () => {
                 <CustomFormInput placeHolder={languageTxt.approximateAnnualIncome} />
                 <Text style={styles.textStyle}>{languageTxt.KycDetaisSubTitle}</Text>
                 <View style={styles.declaration}>
-                    <CustomRadioButton title={languageTxt.kycDetailsQ1} arrayList={arrayList} handleChange={(value:any)=>{}} />
-                    <CustomRadioButton title={languageTxt.kycDetailsQ2} arrayList={arrayList} handleChange={(value:any)=>{}} />
-                    <CustomRadioButton title={languageTxt.kycDetailsQ3} arrayList={arrayList} handleChange={(value:any)=>{}} />
-                    <CustomRadioButton title={languageTxt.kycDetailsQ4} arrayList={arrayList} handleChange={(value:any)=>{}} />
-                    <CustomRadioButton title={languageTxt.kycDetailsQ5} arrayList={arrayList} handleChange={(value:any)=>{}} />
+                    <CustomRadioButton title={languageTxt.kycDetailsQ1} arrayList={arrayList} handleChange={(value: any) => { }} />
+                    <CustomRadioButton title={languageTxt.kycDetailsQ2} arrayList={arrayList} handleChange={(value: any) => { }} />
+                    <CustomRadioButton title={languageTxt.kycDetailsQ3} arrayList={arrayList} handleChange={(value: any) => { }} />
+                    <CustomRadioButton title={languageTxt.kycDetailsQ4} arrayList={arrayList} handleChange={(value: any) => { }} />
+                    <CustomRadioButton title={languageTxt.kycDetailsQ5} arrayList={arrayList} handleChange={(value: any) => { }} />
                 </View>
                 <Text style={styles.textStyle}>{languageTxt.ultimateBeneficiaryOfTheInvestment}</Text>
                 <View style={styles.declaration}>
-                    <CustomRadioButton title={languageTxt.ultimateBeneficiary} arrayList={arrayList} handleChange={(value:any)=>{}} />
+                    <CustomRadioButton title={languageTxt.ultimateBeneficiary} arrayList={arrayList} handleChange={(value: any) => { }} />
                 </View>
                 <CustomFormInput placeHolder={languageTxt.name} />
                 <CustomFormInput placeHolder={languageTxt.cnicNumber} />
-                <View>
-                    <CheckedCheckbox />
+                <View style={styles.confirmationContainer}>
+                    <CheckedCheckbox width={'15'}
+                        height={'15'}
+                        fill={colorConstants.black} />
+                    <Text style={styles.confirmationTextStyle}>{languageTxt.kycDetailConfirmationTxt}</Text>
                 </View>
-                <SingleBtn text={languageTxt.next} width='40%'  onPressCB={()=>{}} />
+                <SingleBtn text={languageTxt.next} width='40%' onPressCB={() => { }} />
 
             </ScrollView>
         </View>

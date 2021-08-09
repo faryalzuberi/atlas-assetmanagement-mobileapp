@@ -151,6 +151,7 @@ kycDetailsQ4: 'Are you holding any financial links to offshore Tax havens?*',
 kycDetailsQ5: 'Do you Deal in high value items such as Gold,Silver or Precious Metals / Stones?*',
 ultimateBeneficiaryOfTheInvestment: 'Ultimate beneficiary of the Investment (if diff -)',
 ultimateBeneficiary: 'Ultimate Beneficiary',
+kycDetailConfirmationTxt: 'I, the undersigned, hereby declare that the above mentioned information is correct, complete and up-to-date to the best of my knowledge and belief, and I shall immediately update the Management Company if there is any change in such information. I hereby assure to the Management Company that the proceeds invested in the Fund(s) are not derived from money laundering or illegal activities and the source of funds declared in the Form is true and correct to the best of my knowledge and belief.',
 
 //Fatca
 accountTitle: 'Account Title',
@@ -169,6 +170,9 @@ fatcaQ8: 'Do you have US Telephone number?*',
 crsForm: 'CRS Form',
 countryOfTaxResidence: 'Country of Tax Residence',
 tinNo: 'Tin No. /Explanation',
+fatcaReviewA: '* Reason A -The country/jurisdiction where the Account Holder is resident does not issue TINs to its residents.',
+fatcaReviewB: '* Reason B - The Account Holder is otherwise unable to obtain a TIN or equivalent number (Please provide reason)',
+fatcaReviewC: '* Reason C - No TIN is required. (Note: Only select this reason, along-with evidence, if the domestic law of the relevant country does not require the collection of the TIN issued by such country)',
 
 //Risk Profile
 riskProfileForm: 'Risk Profile Form',
@@ -179,6 +183,7 @@ riskProfileQ2: 'Your Investment Objective*',
 riskProfileQ3: 'Your Investment Horizon*',
 riskProfileQ4: 'Your current level of Investment Knowledge*',
 riskProfileQ5: 'Your current financial position in a year or so, how secure do you feel your finances will be*',
+riskProfileConfirmation: 'I declare that I understand that this risk profiling questionnaire will help me assess my risk appetite based on the information provided by me. I am are aware that my financial needs may change over time depending on my personal and situation objectives. I also understand that this questionnaire does not constitute, in any manner, advice given by the Company. I shall be solely responsible for all my current and future investment, conversion and transfer transactions if these transactions are not in accordance with my above-mentioned risk profiling results, I will not hold the Company liable or responsible for these transactions in any manner. Further, I hereby confirm that all information provided in this form is true to the best of my knowledge.',
 
 //DocumentsUpload
 cnicDocuments: 'CNIC / Guardian CNIC / B-Form /Family Registration Certificate',

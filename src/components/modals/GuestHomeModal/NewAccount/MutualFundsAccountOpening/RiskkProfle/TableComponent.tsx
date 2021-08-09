@@ -1,37 +1,16 @@
 import * as React from 'react';
-import { ScrollView, Text, View } from 'react-native';
-import { DataTable } from 'react-native-paper';
+import { View } from 'react-native';
+import { Table, Row, Rows } from 'react-native-table-component';
 import { styles } from './styles';
 
 export const TableComponent = ({ tableHeader, tableContent }: any) => {
     return (
-        
-            <DataTable style={styles.table}>
-            
-               <Text>
-                    {tableHeader && tableHeader.map((item: any) => (
-                        
-                         <DataTable.Header style={{flex: 1, flexDirection: 'row',}}>
-                        <DataTable.Title key={item?.key}>{item?.value}</DataTable.Title>
-                        </DataTable.Header>
-                    ))}
-                -
+        <View style={styles.tableContainer}>
+                <Table borderStyle={styles.table}>
+                    <Row data={tableHeader} style={styles.head} textStyle={styles.text} />
+                    <Rows data={tableContent}  textStyle={styles.text} />
+                </Table>
+        </View>
 
-                    {tableContent && tableContent.map((item: any) => (
-                      
-                        <DataTable.Row>
-                        <DataTable.Cell key={item?.key}>{item?.rowValue1}</DataTable.Cell>
-                        <DataTable.Cell key={item?.key}>{item?.rowValue2}</DataTable.Cell>
-                        <DataTable.Cell key={item?.key}>{item?.rowValue3}</DataTable.Cell>
-                        <DataTable.Cell key={item?.key}>{item?.rowValue4}</DataTable.Cell>
-                        </DataTable.Row>
-                     
-                    ))}
-                    </Text>
-                    
-              
-            </DataTable>
-           
-    
     );
 }
