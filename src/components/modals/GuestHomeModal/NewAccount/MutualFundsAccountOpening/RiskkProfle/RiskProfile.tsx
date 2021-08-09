@@ -41,7 +41,7 @@ export const RiskProfile = () => {
                 <Text style={styles.textStyle}>{languageTxt.belowAreTheSuitableSchemesForYourInvestment}</Text>
                 <View style={{flex: 1}}>
                   
-                <TableComponent tableHeader={tableHeader} tableContent={tableContent}/>
+                {/* <TableComponent tableHeader={tableHeader} tableContent={tableContent}/> */}
                
                 </View>
                     </ScrollView>

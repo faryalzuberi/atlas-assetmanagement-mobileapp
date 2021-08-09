@@ -139,15 +139,15 @@ export const CustomCard = ({
               <Title style={styles.detailDesignation}>{designation}</Title>
             )}
             <View style={styles.titleLine}></View>
-            {paragraph &&  Array.isArray(paragraph) ? paragraph.map((item)=>(
-              <View style={styles.paragraphContainer}>
+            {paragraph &&  Array.isArray(paragraph) ? paragraph.map((item, i)=>(
+              <View style={styles.paragraphContainer} >
                 <View style={styles.paragraphText1}>
                 <Text>{item?.name}</Text>
                 </View>
-                <View style={styles.paragraphText2}>
+                <View style={styles.paragraphText2} >
                 <Text >:</Text>
                 </View>
-                <View style={styles.paragraphText3}>
+                <View style={styles.paragraphText3} >
                 <Text>{item?.description}</Text>
                 </View>
               </View>

@@ -6,6 +6,7 @@ import { languageTxt } from '../../../../../../utils/languageTxt';
 import CustomFormInput from '../../../../../shared/CustomFormInput';
 import { styles } from './styles';
 import RightArrow from '../../../../../../assets/icons/new_account/rightArrow.svg';
+import CheckedCheckbox from '../../../../../../assets/icons/new_account/checkedCheckbox.png';
 import { CustomRadioButton } from '../../../../../shared/CustomRadioButton';
 import SingleBtn from '../../../../../shared/SingleBtn';
 export const KycDetails = () => {
@@ -48,6 +49,9 @@ export const KycDetails = () => {
                 </View>
                 <CustomFormInput placeHolder={languageTxt.name} />
                 <CustomFormInput placeHolder={languageTxt.cnicNumber} />
+                <View>
+                    <CheckedCheckbox />
+                </View>
                 <SingleBtn text={languageTxt.next} width='40%'  onPressCB={()=>{}} />
 
             </ScrollView>
