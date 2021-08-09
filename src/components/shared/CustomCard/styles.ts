@@ -139,4 +139,22 @@ export const styles = StyleSheet.create({
     height: 135,
     marginRight: 10,
   },
+  paragraphContainer: {
+    flex: 1,
+    flexDirection: 'row',
+    flexWrap: 'wrap', 
+    marginBottom: '4%'
+  },
+  paragraphText1:{
+    flex: 1.2, 
+    alignSelf: 'center'
+  },
+  paragraphText2:{
+    flex: 0.2, 
+    alignSelf: 'center'
+  },
+  paragraphText3:{
+    flex: 2, 
+    alignSelf: 'center',
+  },
 });

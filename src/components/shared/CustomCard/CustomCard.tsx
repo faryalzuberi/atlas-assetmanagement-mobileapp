@@ -139,18 +139,30 @@ export const CustomCard = ({
               <Title style={styles.detailDesignation}>{designation}</Title>
             )}
             <View style={styles.titleLine}></View>
-            {paragraph && (
+            {paragraph &&  Array.isArray(paragraph) ? paragraph.map((item)=>(
+              <View style={styles.paragraphContainer}>
+                <View style={styles.paragraphText1}>
+                <Text>{item?.name}</Text>
+                </View>
+                <View style={styles.paragraphText2}>
+                <Text >:</Text>
+                </View>
+                <View style={styles.paragraphText3}>
+                <Text>{item?.description}</Text>
+                </View>
+              </View>
+            )): (
               <Paragraph style={styles.detailParagraph}>
-                {profile_image && (
-                  <Image
-                    style={styles.detailImage}
-                    source={{
-                      uri: profile_image,
-                    }}
-                  />
-                )}
-                {paragraph}
-              </Paragraph>
+              {profile_image && (
+                <Image
+                  style={styles.detailImage}
+                  source={{
+                    uri: profile_image,
+                  }}
+                />
+              )}
+              {paragraph}
+            </Paragraph>
             )}
           </Card.Content>
         </Card>

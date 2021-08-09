@@ -19,7 +19,7 @@ const renderItem = ({item}: any) => (
       title={item.name}
       designation={item?.designation && item.designation}
       profile_image={item?.profile_image && item.profile_image}
-      paragraph={item.description}
+      paragraph={ item?.description}
     />
   </View>
 );

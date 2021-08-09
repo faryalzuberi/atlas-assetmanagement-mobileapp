@@ -24,7 +24,6 @@ export const TableComponent = ({ tableHeader, tableContent }: any) => {
                         <DataTable.Cell key={item?.key}>{item?.rowValue2}</DataTable.Cell>
                         <DataTable.Cell key={item?.key}>{item?.rowValue3}</DataTable.Cell>
                         <DataTable.Cell key={item?.key}>{item?.rowValue4}</DataTable.Cell>
-                        <DataTable.Cell key={item?.key}>{item?.rowValue5}</DataTable.Cell>
                         </DataTable.Row>
                      
                     ))}
