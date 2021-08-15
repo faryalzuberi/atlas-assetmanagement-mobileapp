@@ -149,4 +149,83 @@ const getAtlasBachatPlan = async () => {
     });
 };
 
-export {getAtlasMoneyMarketFund, getSovereignFund, getAtlasIncomeFund, getAtlasStockMarketFund, getAtlasIslamicMoneyMarketFund, getAtlasIslamicIncomeFund, getAtlasIslamicStockFund, getAtlasPensionFund, getAtlasBachatPlan };
+const getAtlasBachatBalancedPlan = async () => {
+  return instanceAdcom
+    .get('/webservice_for_afl_app.php?fun=product_page_format1&id=2910')
+    .then(res => {
+      
+     
+      return res;
+    })
+    .catch(error => {
+      const {response} = error;
+      const {request, ...errorObject} = response;
+      let json = {};
+      return errorObject;
+    });
+};
+
+const getAtlasBachatGrowthPlan = async () => {
+  return instanceAdcom
+    .get('/webservice_for_afl_app.php?fun=product_page_format1&id=2910')
+    .then(res => {
+      
+     
+      return res;
+    })
+    .catch(error => {
+      const {response} = error;
+      const {request, ...errorObject} = response;
+      let json = {};
+      return errorObject;
+    });
+};
+const getAtlasBachatIslamicPlan = async () => {
+  return instanceAdcom
+    .get('/webservice_for_afl_app.php?fun=product_page_format1&id=2911')
+    .then(res => {
+      
+     
+      return res;
+    })
+    .catch(error => {
+      const {response} = error;
+      const {request, ...errorObject} = response;
+      let json = {};
+      return errorObject;
+    });
+};
+
+const getAtlasBachatBalancedIslamicPlan = async () => {
+  return instanceAdcom
+    .get('/webservice_for_afl_app.php?fun=product_page_format1&id=2912')
+    .then(res => {
+      
+     
+      return res;
+    })
+    .catch(error => {
+      const {response} = error;
+      const {request, ...errorObject} = response;
+      let json = {};
+      return errorObject;
+    });
+};
+const getAtlasBachatGrowthIslamicPlan = async () => {
+  return instanceAdcom
+    .get('/webservice_for_afl_app.php?fun=product_page_format1&id=2913')
+    .then(res => {
+      
+     
+      return res;
+    })
+    .catch(error => {
+      const {response} = error;
+      const {request, ...errorObject} = response;
+      let json = {};
+      return errorObject;
+    });
+};
+
+
+export {getAtlasMoneyMarketFund, getSovereignFund, getAtlasIncomeFund, getAtlasStockMarketFund, getAtlasIslamicMoneyMarketFund, getAtlasIslamicIncomeFund, getAtlasIslamicStockFund, getAtlasPensionFund, getAtlasBachatPlan, getAtlasBachatBalancedPlan, getAtlasBachatGrowthPlan, getAtlasBachatIslamicPlan, getAtlasBachatBalancedIslamicPlan, getAtlasBachatGrowthIslamicPlan };

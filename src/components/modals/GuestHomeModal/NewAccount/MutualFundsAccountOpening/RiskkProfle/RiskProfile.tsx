@@ -9,7 +9,7 @@ import RightArrow from '../../../../../../assets/icons/new_account/rightArrow.sv
 import CheckedCheckbox from '../../../../../../assets/icons/new_account/checkedCheckbox.svg';
 import { CustomRadioButton } from '../../../../../shared/CustomRadioButton';
 import { list1, list2, list3, list4, list5, tableHeader, tableContent } from '../../../../../Items/riskProfileItems';
-import { TableComponent } from './TableComponent';
+import { TableComponent } from '../../../../../shared/TableComponent';
 import SingleBtn from '../../../../../shared/SingleBtn';
 export const RiskProfile = () => {
 
@@ -42,10 +42,7 @@ export const RiskProfile = () => {
                 <CustomFormInput placeHolder={languageTxt.basedOnYourRiskAppetiteAndScore} />
                 <Text style={styles.textStyle}>{languageTxt.belowAreTheSuitableSchemesForYourInvestment}</Text>
                 <View style={{ flex: 1 }}>
-
                     <TableComponent tableHeader={tableHeader} tableContent={tableContent}/>
-
-
                 </View>
                 <View style={styles.confirmationContainer}>
                     <CheckedCheckbox width={'15'}

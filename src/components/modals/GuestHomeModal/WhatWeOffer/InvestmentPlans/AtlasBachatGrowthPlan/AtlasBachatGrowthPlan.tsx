@@ -4,14 +4,14 @@ import {useQuery} from 'react-query';
 import {Loader} from '../../../../../shared/Loader';
 import {DetailList} from '../../../../../shared/DetailList';
 import {languageTxt} from '../../../../../../utils/languageTxt';
-import { getAtlasBachatPlan } from '../../../../../../config/api/whatWeOffer';
+import {getAtlasBachatGrowthPlan } from '../../../../../../config/api/whatWeOffer';
 
 
 
 export const AtlasBachatGrowthPlan = () => {
   const {isLoading, error, data, refetch}: any = useQuery(
-    'getAtlasBachatPlan',
-    getAtlasBachatPlan,
+    'getAtlasBachatGrowthPlan',
+    getAtlasBachatGrowthPlan,
     {select: (boardOfDirectors: any) => boardOfDirectors},
   );
 

@@ -4,14 +4,14 @@ import {useQuery} from 'react-query';
 import {Loader} from '../../../../../shared/Loader';
 import {DetailList} from '../../../../../shared/DetailList';
 import {languageTxt} from '../../../../../../utils/languageTxt';
-import { getAtlasBachatPlan } from '../../../../../../config/api/whatWeOffer';
+import { getAtlasBachatBalancedIslamicPlan } from '../../../../../../config/api/whatWeOffer';
 
 
 
 export const AtlasBachatBalancedIslamicPlan = () => {
   const {isLoading, error, data, refetch}: any = useQuery(
-    'getAtlasBachatPlan',
-    getAtlasBachatPlan,
+    'getAtlasBachatBalancedIslamicPlan',
+    getAtlasBachatBalancedIslamicPlan,
     {select: (boardOfDirectors: any) => boardOfDirectors},
   );
 
