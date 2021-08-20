@@ -19,6 +19,9 @@ export const styles = StyleSheet.create({
     backgroundColor: colorConstants.lightGray,
     
   },
+  active:{
+    flex: 1
+  },
   cardContent: {
     justifyContent: 'center',
     alignItems: 'center',

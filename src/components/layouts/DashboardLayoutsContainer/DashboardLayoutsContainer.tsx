@@ -2,10 +2,9 @@ import React from 'react';
 import {View} from 'react-native';
 
 import {styles} from './styles';
-import {CustomCard} from '../CustomCard';
 import {DashboardList} from '../DashboardList';
-import {IntroSilder} from '../IntroSilder';
-
+import {IntroSilder} from '../../shared/IntroSilder';
+import {HeaderCardLayout} from '../CardLayout'
 interface dashboardLayoutsContainerProps {
   arrayList: any;
   interval: number;
@@ -22,6 +21,8 @@ export const DashboardLayoutsContainer = ({
   icon,
 }: dashboardLayoutsContainerProps) => {
   return (
+    
+    
     <View style={styles.bodyContainer}>
       <DashboardList
         arrayList={arrayList}
@@ -31,8 +32,7 @@ export const DashboardLayoutsContainer = ({
             {sliderlist ? (
               <IntroSilder arrayList={sliderlist} />
             ) : (
-              <CustomCard
-                type={'header'}
+              <HeaderCardLayout
                 title={title ? title : ''}
                 icon={icon ? icon : <></>}
               />
@@ -41,5 +41,6 @@ export const DashboardLayoutsContainer = ({
         }
       />
     </View>
+
   );
 };

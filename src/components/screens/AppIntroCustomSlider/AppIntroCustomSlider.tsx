@@ -4,7 +4,7 @@ import AppIntroSlider from 'react-native-app-intro-slider';
 import {SafeAreaView} from 'react-native-safe-area-context';
 
 import {styles} from './styles';
-import {slides} from './appIntroSliderItems';
+import {slides} from '../../Items/appIntroSliderItems';
 import {languageTxt} from '../../../utils/languageTxt';
 
 import AtlasLogo10 from '../../../assets/icons/splash_screen/atlasLogo10.svg';
@@ -21,7 +21,7 @@ const renderPage = (activeIndex: any) => {
       </View>
       <SafeAreaView>
         <AtlasLogoHorizontal width={'100%'} height={50} />
-        <AtlasLogo10 style={{marginTop: -100}} width={'100%'} height={400} />
+        <AtlasLogo10 style={styles.logoStyle} width={'100%'} height={400} />
       </SafeAreaView>
     </View>
   );

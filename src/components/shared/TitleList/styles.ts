@@ -11,7 +11,7 @@ export const styles = StyleSheet.create({
     marginBottom: 45,
   },
   header: {
-    marginHorizontal: 15,
-    marginVertical: 10,
+    marginHorizontal: 5,
+    marginVertical: 5,
   },
 });

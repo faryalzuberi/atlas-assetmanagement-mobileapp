@@ -1,12 +1,27 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {SafeAreaView} from 'react-native-safe-area-context';
 
-import {styles} from './styles';
+import ModalStackScreen from '../../shared/ModalStackScreen/ModalStackScreen';
+import { NavHomeModal } from '../../modals/NavHomeModal';
+import { NavHistory } from '../../modals/NavHomeModal/NavHistory';
 
-export const Navs = () => {
+export const Navs = ({navigation}: any) => {
+  const items = [
+    {
+      name: 'NavHomeModal',
+      component: NavHomeModal,
+      backButton: false,
+      handleOnBack: () => {},
+    },
+    {
+      name: 'NavHistory',
+      component: NavHistory,
+      backButton: true,
+      handleOnBack: () => navigation.navigate('NavHomeModal'),
+    },]
   return (
-    <View>
-      <Text>Navs</Text>
-    </View>
+    <SafeAreaView style={{flex: 1}}>
+      <ModalStackScreen items={items} />
+    </SafeAreaView>
   );
 };

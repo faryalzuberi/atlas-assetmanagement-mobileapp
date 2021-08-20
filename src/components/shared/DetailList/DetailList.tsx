@@ -2,7 +2,7 @@ import React from 'react';
 import {View, FlatList} from 'react-native';
 
 import {styles} from './styles';
-import {CustomCard} from '../CustomCard';
+import { DetailsCardLayout } from '../../layouts/CardLayout';
 import {Paragraph, Title} from 'react-native-paper';
 
 interface detailListProps {
@@ -14,8 +14,8 @@ interface detailListProps {
 
 const renderItem = ({item}: any) => (
   <View style={styles.menuCard}>
-    <CustomCard
-      type={'detail'}
+    {item?.profile_image}
+    <DetailsCardLayout
       title={item.name}
       designation={item?.designation && item.designation}
       profile_image={item?.profile_image && item.profile_image}

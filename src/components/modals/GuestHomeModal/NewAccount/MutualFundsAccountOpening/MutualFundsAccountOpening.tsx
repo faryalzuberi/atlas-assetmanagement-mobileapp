@@ -1,6 +1,6 @@
 import React from 'react';
 import { ScrollView } from 'react-native';
-import {CustomCard} from '../../../../shared/CustomCard'
+import { HeaderCardLayout } from '../../../../layouts/CardLayout';
 import { languageTxt } from '../../../../../utils/languageTxt';
 import CreateAccount from '../../../../../assets/icons/new_account/createAccount.svg';
 import { colorConstants } from '../../../../../utils/colorConstants';
@@ -12,7 +12,7 @@ const Tab:any = createMaterialTopTabNavigator();
 export const MutualFundsAccountOpening = () => {
     return(
         <ScrollView showsVerticalScrollIndicator={false}>
-            <CustomCard type={languageTxt.header} title={languageTxt.accountOpeningForm} icon={
+            <HeaderCardLayout  title={languageTxt.accountOpeningForm} icon={
           <CreateAccount
             width={'40'}
             height={'40'}

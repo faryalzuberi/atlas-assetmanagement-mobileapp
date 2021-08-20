@@ -2,7 +2,7 @@ import React from 'react';
 
 import {guestItems} from '../../Items/guestItems';
 import {sliderItems} from '../../Items/sliderItems';
-import {DashboardLayoutsContainer} from '../../shared/DashboardLayoutsContainer';
+import {DashboardLayoutsContainer} from '../../layouts/DashboardLayoutsContainer';
 
 export const GuestHomeModal = () => {
   return (

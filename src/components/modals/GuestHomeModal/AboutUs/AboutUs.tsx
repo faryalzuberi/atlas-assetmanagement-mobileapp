@@ -3,7 +3,7 @@ import React from 'react';
 import {aboutUsItems} from '../../../Items/aboutUsItems';
 import {languageTxt} from '../../../../utils/languageTxt';
 import {colorConstants} from '../../../../utils/colorConstants';
-import {DashboardLayoutsContainer} from '../../../shared/DashboardLayoutsContainer';
+import {DashboardLayoutsContainer} from '../../../layouts/DashboardLayoutsContainer';
 
 import AboutUsIcon from '../../../../assets/icons/guest_screen/aboutUs.svg';
 

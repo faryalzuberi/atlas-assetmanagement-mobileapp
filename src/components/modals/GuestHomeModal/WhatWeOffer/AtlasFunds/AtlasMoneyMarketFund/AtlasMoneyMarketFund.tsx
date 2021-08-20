@@ -5,7 +5,6 @@ import {Loader} from '../../../../../shared/Loader';
 import {DetailList} from '../../../../../shared/DetailList';
 import {languageTxt} from '../../../../../../utils/languageTxt';
 import {getAtlasMoneyMarketFund} from '../../../../../../config/api/whatWeOffer';
-import { Text } from 'react-native-svg';
 
 
 export const AtlasMoneyMarketFund = () => {
