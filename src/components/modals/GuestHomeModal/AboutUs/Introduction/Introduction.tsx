@@ -15,6 +15,7 @@ export const Introduction = () => {
 
   const [introductionList, setIntroductionList] = useState([]);
   useEffect(() => {
+    console.log(data);
     if (data?.data) {
       let json: any = [];
       for (const [key, value] of Object.entries(data.data)) {

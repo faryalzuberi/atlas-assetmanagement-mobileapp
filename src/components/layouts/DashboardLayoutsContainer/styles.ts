@@ -5,7 +5,7 @@ export const styles = StyleSheet.create({
     marginVertical: 10,
   },
   bodyContainer: {
-    flex: 1,
+    flex: 4,
     flexDirection: 'column',
     paddingBottom: 45,
   },

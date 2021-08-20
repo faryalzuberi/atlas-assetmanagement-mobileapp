@@ -1,8 +1,9 @@
 import React from 'react';
-import {View, FlatList} from 'react-native';
-
-import {styles} from './styles';
-import {CustomCard} from '../CustomCard';
+import { View, FlatList } from 'react-native';
+import { ListCardLayout } from '../../layouts/CardLayout';
+import { styles } from './styles';
+import { CustomCard } from '../CustomCard';
+import { HeaderCardLayout } from '../../layouts/CardLayout'
 
 interface titleListProps {
   icon: any;
@@ -11,16 +12,19 @@ interface titleListProps {
   interval: number;
 }
 
-const renderItem = ({item}: any) => (
+const renderItem = ({ item }: any) => (
   <View style={styles.menuCard}>
-     <CustomCard type={(item?.type)? 'accordian':'list'} title={item.title} path={item.path} icon={item.icon} paragraph={item.description} subTitle={item.subTitle} subTitleDescription={item.subTitleDescription} titleNumberOfLines={item.titleNumberOfLines} />
+    {(item?.type) ?
+      <CustomCard type='accordian' title={item.title} path={item.path} icon={item.icon} paragraph={item.description} subTitle={item.subTitle} subTitleDescription={item.subTitleDescription} titleNumberOfLines={item.titleNumberOfLines} /> :
+      <ListCardLayout  title={item.title} path={item.path}   />
+    }
+
   </View>
 );
 
-const renderHeader = ({title, icon}: any) => (
+const renderHeader = ({ title, icon }: any) => (
   <View style={styles.header}>
-    <CustomCard
-      type={'header'}
+    <HeaderCardLayout
       title={title ? title : ''}
       icon={icon ? icon : <></>}
     />
@@ -40,7 +44,7 @@ export const TitleList = ({
       numColumns={interval}
       showsVerticalScrollIndicator={false}
       renderItem={renderItem}
-      ListHeaderComponent={() => renderHeader({title, icon})}
+      ListHeaderComponent={() => renderHeader({ title, icon })}
       keyExtractor={(item, index) => index.toString()}
     />
   );

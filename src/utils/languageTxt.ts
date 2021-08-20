@@ -261,6 +261,16 @@ nominee3: 'Nominee 3',
 nomineeRelation: 'Nominee Relation',
 stAddress: 'St Address',
 
+//Nav
+nav: 'NAVs',
+openEndMutualFundsTxt: 'OPEN END MUTUAL FUNDS',
+
+//Nav History
+navHistoryTxt: 'Nav History',
+selectCategoryTxt: 'Select Category',
+selectFundTxt: 'Select Fund',
+from: 'From',
+to: 'To',
   // Type
   dashboardGuestUser: 'dashboardGuestUser',
   header: 'header',
@@ -269,5 +279,7 @@ stAddress: 'St Address',
   accordians: 'Accordions',
   numeric: 'numeric',
   accordian: 'accordian',
-  documentsAccordian: 'documentsAccordian'
+  navAccordianTxt: 'navAccordian',
+  documentsAccordian: 'documentsAccordian',
+ search: 'Search'
 };

@@ -2,9 +2,10 @@ import React from 'react';
 import {View, FlatList, SectionList} from 'react-native';
 
 import {styles} from './styles';
-import {CustomCard} from '../CustomCard';
+import {CustomCard} from '../../shared/CustomCard';
 import {languageTxt} from '../../../utils/languageTxt';
-import {Header} from 'react-native/Libraries/NewAppScreen';
+import {DashboardCardLayout} from '../CardLayout';
+
 
 interface dashboardListProps {
   arrayList: any;
@@ -14,8 +15,7 @@ interface dashboardListProps {
 
 const renderItem = ({item}: any) => (
   <View style={styles.menuCard}>
-    <CustomCard
-      type={'dashboard'}
+    <DashboardCardLayout
       title={item.title}
       icon={item.icon}
       path={item.path}
@@ -29,6 +29,7 @@ export const DashboardList = ({
   header,
 }: dashboardListProps) => {
   return (
+    
     <FlatList
       style={styles.flatList}
       data={arrayList}

@@ -3,7 +3,7 @@ import React from 'react';
 import {whatWeOfferItems} from '../../../Items/whatWeOfferItems';
 import {languageTxt} from '../../../../utils/languageTxt';
 import {colorConstants} from '../../../../utils/colorConstants';
-import {DashboardLayoutsContainer} from '../../../shared/DashboardLayoutsContainer';
+import {DashboardLayoutsContainer} from '../../../layouts/DashboardLayoutsContainer';
 
 import WhatWeOfferIcon from '../../../../assets/icons/guest_screen/whatWeOffer.svg';
 

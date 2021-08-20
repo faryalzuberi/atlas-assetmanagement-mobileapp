@@ -61,4 +61,7 @@ export const styles = StyleSheet.create({
   itemColor: {
     backgroundColor: colorConstants.primary,
   },
+  logoStyle:{
+    marginTop: -100
+  }
 });

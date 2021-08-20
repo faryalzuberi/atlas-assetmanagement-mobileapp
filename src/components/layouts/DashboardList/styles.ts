@@ -8,4 +8,5 @@ export const styles = StyleSheet.create({
   flatList: {
     paddingHorizontal: 15,
   },
+
 });

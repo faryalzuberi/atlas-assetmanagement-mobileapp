@@ -1,11 +1,11 @@
 import React from 'react';
 
-import {languageTxt} from '../../../utils/languageTxt';
+import {languageTxt} from '../../utils/languageTxt';
 
-import AtlasFundsLogo from '../../../assets/icons/splash_screen/atlasFunds.svg';
-import AtlasInvestment from '../../../assets/icons/splash_screen/atlasInvestment.svg';
-import AtlasMeraj from '../../../assets/icons/splash_screen/atlasMeraj.svg';
-import AtlasPension from '../../../assets/icons/splash_screen/atlasPension.svg';
+import AtlasFundsLogo from '../../assets/icons/splash_screen/atlasFunds.svg';
+import AtlasInvestment from '../../assets/icons/splash_screen/atlasInvestment.svg';
+import AtlasMeraj from '../../assets/icons/splash_screen/atlasMeraj.svg';
+import AtlasPension from '../../assets/icons/splash_screen/atlasPension.svg';
 
 const slides = [
   {

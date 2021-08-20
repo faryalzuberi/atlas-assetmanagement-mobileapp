@@ -22,6 +22,7 @@ interface customCardProps {
   subTitleDescription?: string;
   titleNumberOfLines?: number;
   subType?: string;
+  description?:string
 }
 export const CustomCard = ({
   type,
@@ -34,7 +35,8 @@ export const CustomCard = ({
   path,
   subTitle,
   subType,
-  subTitleDescription
+  subTitleDescription,
+  description
 }: customCardProps) => {
   const navigation = useNavigation();
   const [expanded, setExpanded] = React.useState(false);
@@ -42,19 +44,9 @@ export const CustomCard = ({
   const handlePress = () => setExpanded(!expanded);
   return (
     <>
-      {type == 'list' && (
-        <TouchableOpacity
-          activeOpacity={0.9}
-          style={styles.cardContainer}
-           onPress={path ? () => navigation.navigate(path) : () => { }}>
-          <Card style={styles.card}>
-            <Card.Content style={styles.cardContent}>
-              {title && <Title style={styles.listTitle}>{title}</Title>}
-            </Card.Content>
-          </Card>
-        </TouchableOpacity>
-      )}
-            {type == 'accordian' && (
+     
+        
+        {type == 'accordian' && (
         <TouchableOpacity
           activeOpacity={0.9}
           >
@@ -63,6 +55,7 @@ export const CustomCard = ({
               style={(expanded) ? styles.activeCard : styles.card}
               title={title}
               titleNumberOfLines={titleNumberOfLines? titleNumberOfLines: 1}
+             // description={description ? description: '' }
               titleStyle={{color: colorConstants.primary}}
               right={expanded ? () => (icon.negative) : () => (icon.positive)}
               expanded={expanded}
@@ -72,7 +65,7 @@ export const CustomCard = ({
                 (subType == 'documentsAccordian') ? (<View>
 
                   <List.Item title='' style={styles.accordianContainer2} right={() => (<Button color={colorConstants.red} style={styles.accordianButtonStyle} labelStyle={styles.accordianButtonLabelStyle} mode={languageTxt.contained} onPress={path ? () => navigation.navigate(path) : () => { }} >Upload New File</Button>)} />
-                </View>) : (
+                </View>) : (subType == languageTxt.navAccordianTxt) ? (<Text>text</Text>) : (
                   <View>
                   <List.Item style={styles.accordianContainer} title={paragraph} titleStyle={styles.accordianTitleStyle1} titleNumberOfLines={5} />
                   <List.Item style={styles.accordianContainer} title={subTitle} titleStyle={styles.accordianTitleStyle2} description={subTitleDescription} descriptionStyle={styles.accordianDescriptionStyle} descriptionNumberOfLines={10} />
@@ -88,85 +81,10 @@ export const CustomCard = ({
       )
       }
 
-      {type == 'dashboard' && (
-        <TouchableOpacity
-          activeOpacity={0.9}
-          style={styles.cardContainer}
-          onPress={path ? () => navigation.navigate(path) : () => { }}>
-          <Card style={styles.card}>
-            <Card.Content style={styles.cardContent}>
-              {icon && icon}
-              {title && <Title style={styles.dashboardTitle}>{title}</Title>}
-            </Card.Content>
-          </Card>
-        </TouchableOpacity>
-      )}
 
-      {(type == 'carousel' || type == 'header') && (
-        <LinearGradient
-          colors={[colorConstants.primary, colorConstants.secondary]}
-          style={styles.linearCard}>
-          {type == 'carousel' && (
-            <Card.Content style={styles.carouselContent}>
-              <View style={styles.carouselDescription}>
-                {title && <Title style={styles.carouselTitle}>{title}</Title>}
-                {paragraph && (
-                  <Paragraph style={styles.carouselParagraph}>
-                    {paragraph}
-                  </Paragraph>
-                )}
-              </View>
-              <View style={styles.carouselIcon}>{icon}</View>
-            </Card.Content>
-          )}
+    
 
-          {type == 'header' && (
-            <Card.Content style={styles.headerContent}>
-              {icon}
-              <View style={styles.carouselDescription}>
-                {title && <Title style={styles.headerTitle}>{title}</Title>}
-              </View>
-            </Card.Content>
-          )}
-        </LinearGradient>
-      )}
-
-      {type == 'detail' && (
-        <Card style={styles.card}>
-          <Card.Content>
-            {title && <Title style={styles.detailTitle}>{title}</Title>}
-            {designation && (
-              <Title style={styles.detailDesignation}>{designation}</Title>
-            )}
-            <View style={styles.titleLine}></View>
-            {paragraph &&  Array.isArray(paragraph) ? paragraph.map((item, i)=>(
-              <View style={styles.paragraphContainer} >
-                <View style={styles.paragraphText1}>
-                <Text>{item?.name}</Text>
-                </View>
-                <View style={styles.paragraphText2} >
-                <Text >:</Text>
-                </View>
-                <View style={styles.paragraphText3} >
-                <Text>{item?.description}</Text>
-                </View>
-              </View>
-            )): (
-              <Paragraph style={styles.detailParagraph}>
-              {profile_image && (
-                <Image
-                  style={styles.detailImage}
-                  source={{
-                    uri: profile_image,
-                  }}
-                />
-              )}
-              {paragraph}
-            </Paragraph>
-            )}
-          </Card.Content>
-        </Card>
-      )}
+     
     </>
   );
 };
