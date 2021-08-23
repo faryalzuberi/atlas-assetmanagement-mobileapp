@@ -7,12 +7,12 @@ interface cardProps {
    header?: JSX.Element;
    body:JSX.Element;
    footer?: JSX.Element;
-   expnaded?: boolean;
+  
   }
 
-export const Cards = ({header, body, footer,  expnaded}: cardProps) =>{
+export const Cards = ({header, body, footer}: cardProps) =>{
     return(
-        <Card style={ expnaded === true ? styles.active : styles.card}>
+        <Card style={ styles.card}>
             {header}
             {body}
             {footer}

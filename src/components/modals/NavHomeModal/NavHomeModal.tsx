@@ -49,20 +49,24 @@ export const NavHomeModal = ({ navigation }: any) => {
             for (const [key, value] of Object.entries(data?.data?.data?.parent_funds)) {
                 const fundValue: any = value;
                 if (key === title[0]) {
-                   
+                    // console.log(value)
+                    // console.log(key)
+                    const tabCol = [];
+                    const tabContent = []
                     for (const [key, value] of Object.entries(fundValue)) {
-                         console.log(key)
-                       
-                      //  setDailyNav([...dailyNav,dailyNav[0]?.tableHead.push(key)]);  
+                        tabCol.push(key);
+                        tabContent.push(value); 
                     }
+                    console.log( tabCol)
                 }
             }
+            
 
         }
     }, [data]);
     return (
         <ScrollView showsVerticalScrollIndicator={false} >
-            {console.log(dailyNav[0]?.tableHead)}
+            {console.log(dailyNav && dailyNav[0])}
             {
                 (isLoading) ? (<Loader loader={isLoading} />) : (<><HeaderCardLayout  title={languageTxt.nav} icon={
                     <Nav
