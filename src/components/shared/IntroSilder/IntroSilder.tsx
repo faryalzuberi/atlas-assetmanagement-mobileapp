@@ -3,7 +3,6 @@ import {View} from 'react-native';
 import AppIntroSlider from 'react-native-app-intro-slider';
 import { CarouselCardLayout } from '../../layouts/CardLayout/CarouselCardLayout';
 import {styles} from './styles';
-import {CustomCard} from '../CustomCard';
 
 interface IntroSilderProps {
   arrayList: any;

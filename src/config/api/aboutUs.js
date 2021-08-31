@@ -25,13 +25,14 @@ const getVisionMission = async () => {
 
 const getIntroduction = async () => {
   return instanceAdcom
-    .get('/webservice_for_afl_app.php?fun=format1&id=605')
+    .get('/webservice_for_afl_app.php?fun=format4&id=605')
     .then(res => {
       let json = {
         data: res?.data?.data,
         success: res?.data?.success,
         error: false,
       };
+ 
       return json;
     })
     .catch(error => {
@@ -143,6 +144,7 @@ const getTeamManagement = async () => {
         error: false,
       };
       return json;
+      
     })
     .catch(error => {
       const {response} = error;

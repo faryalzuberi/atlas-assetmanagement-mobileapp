@@ -49,6 +49,9 @@ import {MutualFundsAccountOpening} from '../../modals/GuestHomeModal/NewAccount/
 //NewAccount
 import {NewAccount} from '../../modals/GuestHomeModal/NewAccount';
 import { SahulatSarmayakariAccountOpening } from '../../modals/GuestHomeModal/NewAccount/SahulatSarmayakariAccountOpening';
+//Login
+import { Login } from '../../modals/GuestHomeModal/Login';
+import { OTP } from '../../modals/GuestHomeModal/Login/OTP';
 
 export const Home = ({navigation}: any) => {
   const items = [
@@ -296,6 +299,19 @@ export const Home = ({navigation}: any) => {
       component: SahulatSarmayakariAccountOpening,
       backButton: true,
       handleOnBack: () => navigation.navigate('NewAccount'),
+    },
+    //Login
+    {
+      name: 'Login',
+      component: Login,
+      backButton: true,
+      handleOnBack: () => navigation.navigate('GuestHomeModal'),
+    },
+    {
+      name: 'OTP',
+      component: OTP,
+      backButton: true,
+      handleOnBack: () => navigation.navigate('Login'),
     },
   ];
   return (

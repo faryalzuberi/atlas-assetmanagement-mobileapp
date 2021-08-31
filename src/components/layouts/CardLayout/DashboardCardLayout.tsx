@@ -1,8 +1,6 @@
 import React from 'react';
 import { TouchableOpacity, View } from 'react-native';
-import LinearGradient from 'react-native-linear-gradient';
 import { Card, Title } from 'react-native-paper';
-import { colorConstants } from '../../../utils/colorConstants';
 import { styles } from './styles';
 import { Cards } from '../../shared/CustomCard';
 import { useNavigation } from '@react-navigation/native';

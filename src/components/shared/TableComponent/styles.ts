@@ -21,6 +21,9 @@ export const styles = StyleSheet.create({
   {
     fontSize: 7,
      margin: 6 
-  }
+  },
+  wrapper: { flexDirection: 'row' },
+  title: { flex: 1, backgroundColor: '#f6f8fa' },
+  row: {  height: 28  },
 
 });

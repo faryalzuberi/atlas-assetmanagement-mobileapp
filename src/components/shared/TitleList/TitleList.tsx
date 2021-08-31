@@ -2,7 +2,7 @@ import React from 'react';
 import { View, FlatList } from 'react-native';
 import { ListCardLayout } from '../../layouts/CardLayout';
 import { styles } from './styles';
-import { CustomCard } from '../CustomCard';
+import { NewAccountAcordian } from '../../layouts/AccordianCardLayout';
 import { HeaderCardLayout } from '../../layouts/CardLayout'
 
 interface titleListProps {
@@ -15,7 +15,7 @@ interface titleListProps {
 const renderItem = ({ item }: any) => (
   <View style={styles.menuCard}>
     {(item?.type) ?
-      <CustomCard type='accordian' title={item.title} path={item.path} icon={item.icon} paragraph={item.description} subTitle={item.subTitle} subTitleDescription={item.subTitleDescription} titleNumberOfLines={item.titleNumberOfLines} /> :
+      <NewAccountAcordian  title={item?.title} path={item?.path} icon={item?.icon} paragraph={item?.description} subTitle={item?.subTitle} subTitleDescription={item?.subTitleDescription} titleNumberOfLines={item?.titleNumberOfLines} /> :
       <ListCardLayout  title={item.title} path={item.path}   />
     }
 

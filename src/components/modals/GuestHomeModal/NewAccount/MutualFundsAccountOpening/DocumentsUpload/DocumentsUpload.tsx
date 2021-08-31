@@ -7,14 +7,14 @@ import SingleBtn from '../../../../../shared/SingleBtn';
 import { languageTxt } from '../../../../../../utils/languageTxt';
 import Positive from '../../../../../../assets/icons/new_account/positive.svg'
 import Negative from '../../../../../../assets/icons/new_account/negative.svg'
-import { CustomCard } from '../../../../../shared/CustomCard';
 import { colorConstants } from '../../../../../../utils/colorConstants';
+import { DocmentsAccordian } from '../../../../../layouts/AccordianCardLayout';
 
 export const DocumentsUpload = () => {
     return (
         <View style={styles.container}>
             <ScrollView showsVerticalScrollIndicator={false}>
-                <CustomCard type={languageTxt.accordian} title={languageTxt.cnicDocuments} subType={languageTxt.documentsAccordian} icon={{
+                <DocmentsAccordian  title={languageTxt.cnicDocuments}  icon={{
                     positive: (
                         <Positive
                             width={'15'}
@@ -30,7 +30,7 @@ export const DocumentsUpload = () => {
                         />
                     ),
                 }}  titleNumberOfLines={3} />
-                <CustomCard type={languageTxt.accordian} title={languageTxt.sourceOfIncome} subType={languageTxt.documentsAccordian} icon={{
+                <DocmentsAccordian  title={languageTxt.sourceOfIncome}  icon={{
                     positive: (
                         <Positive
                             width={'15'}
@@ -46,7 +46,7 @@ export const DocumentsUpload = () => {
                         />
                     ),
                 }}  titleNumberOfLines={2} />
-                <CustomCard type={languageTxt.accordian} title={languageTxt.affidavit} subType={languageTxt.documentsAccordian} icon={{
+                <DocmentsAccordian title={languageTxt.affidavit}  icon={{
                     positive: (
                         <Positive
                             width={'15'}
@@ -62,7 +62,7 @@ export const DocumentsUpload = () => {
                         />
                     ),
                 }}  titleNumberOfLines={2} />
-                <CustomCard type={languageTxt.accordian} title={languageTxt.zakatAffidavit} subType={languageTxt.documentsAccordian} icon={{
+                <DocmentsAccordian title={languageTxt.zakatAffidavit}  icon={{
                     positive: (
                         <Positive
                             width={'15'}
@@ -78,7 +78,7 @@ export const DocumentsUpload = () => {
                         />
                     ),
                 }}  titleNumberOfLines={2} />
-                <CustomCard type={languageTxt.accordian} title={languageTxt.signatureCard} subType={languageTxt.documentsAccordian} icon={{
+                <DocmentsAccordian title={languageTxt.signatureCard}  icon={{
                     positive: (
                         <Positive
                             width={'15'}
@@ -94,7 +94,7 @@ export const DocumentsUpload = () => {
                         />
                     ),
                 }}  titleNumberOfLines={2} />
-                <CustomCard type={languageTxt.accordian} title={languageTxt.nomineeCnic} subType={languageTxt.documentsAccordian} icon={{
+                <DocmentsAccordian title={languageTxt.nomineeCnic}  icon={{
                     positive: (
                         <Positive
                             width={'15'}
@@ -110,7 +110,7 @@ export const DocumentsUpload = () => {
                         />
                     ),
                 }}  titleNumberOfLines={2} />
-                <CustomCard type={languageTxt.accordian} title={languageTxt.disclaimer} subType={languageTxt.documentsAccordian} icon={{
+                <DocmentsAccordian title={languageTxt.disclaimer}  icon={{
                     positive: (
                         <Positive
                             width={'15'}
@@ -126,7 +126,7 @@ export const DocumentsUpload = () => {
                         />
                     ),
                 }}  titleNumberOfLines={2} />
-                <CustomCard type={languageTxt.accordian} title={languageTxt.fatcaForm} subType={languageTxt.documentsAccordian} icon={{
+                <DocmentsAccordian title={languageTxt.fatcaForm}  icon={{
                     positive: (
                         <Positive
                             width={'15'}
@@ -142,7 +142,7 @@ export const DocumentsUpload = () => {
                         />
                     ),
                 }}  titleNumberOfLines={2} />
-                <CustomCard type={languageTxt.accordian} title={languageTxt.otherDocuments} subType={languageTxt.documentsAccordian} icon={{
+                <DocmentsAccordian title={languageTxt.otherDocuments} icon={{
                     positive: (
                         <Positive
                             width={'15'}

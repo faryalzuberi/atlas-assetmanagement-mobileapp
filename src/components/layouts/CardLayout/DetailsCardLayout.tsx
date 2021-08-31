@@ -1,8 +1,6 @@
 import React from 'react';
 import { Image, Text, View } from 'react-native';
-import LinearGradient from 'react-native-linear-gradient';
 import { Card, Paragraph, Title } from 'react-native-paper';
-import { colorConstants } from '../../../utils/colorConstants';
 import { styles } from './styles';
 import { Cards } from '../../shared/CustomCard';
 interface detailCardProps {
@@ -32,7 +30,7 @@ export const DetailsCardLayout = ({title,designation, paragraph, profile_image }
                     <Text >:</Text>
                     </View>
                     <View style={styles.paragraphText3} >
-                    <Text>{item?.description}</Text>
+                    <Text>{item?.description ? item?.description : item?.designation}</Text>
                     </View>
                   </View>
                 )): (
