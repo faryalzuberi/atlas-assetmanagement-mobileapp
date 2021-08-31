@@ -41,11 +41,46 @@ export const styles = StyleSheet.create({
         textAlign: 'justify',
         marginBottom: '4%'
       },
+      middleContent:{
+        flex:1,
+        flexDirection: 'column'
+      },
+      contentText:{
+        fontWeight: 'bold',
+        fontSize: 15,
+        marginBottom: '3%'
+      },
+      contentTextContainer:{
+        flex: 1,
+        flexDirection: 'row',
+     
+      },
+      contentText2:{
+        marginBottom: '3%',
+        marginLeft: '2%',
+        alignSelf: 'center',
+      },
+      contentSubText: {
+        fontWeight: 'bold',
+        fontSize: 12.5,
+        marginBottom: '3%'
+      },
+      dotStyles:{
+       alignSelf: 'center',
+       justifyContent: 'center',
+       marginBottom: 7,
+       backgroundColor: colorConstants.black,
+       width: 5,
+       height: 5,
+       borderRadius: 65,
+      
+      },
       detailImage: {
         width: 110,
         height: 135,
         marginRight: 10,
       },
+
       titleLine: {
         borderColor: colorConstants.red,
         borderWidth: 1,

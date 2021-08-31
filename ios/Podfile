@@ -12,6 +12,8 @@ target 'AssetManagement' do
     :hermes_enabled => false
   )
 
+  pod 'TouchID', :path => '../node_modules/react-native-touch-id'
+
   target 'AssetManagementTests' do
     inherit! :complete
     # Pods for testing

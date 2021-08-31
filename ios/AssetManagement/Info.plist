@@ -3,6 +3,8 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
+	<key>NSFaceIDUsageDescription</key>
+<string>Enabling Face ID allows you quick and secure access to your account.</string>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
 	<string>AssetManagement</string>

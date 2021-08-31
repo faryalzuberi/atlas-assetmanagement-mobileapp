@@ -2,8 +2,6 @@ import React from 'react';
 import {View, FlatList, SectionList} from 'react-native';
 
 import {styles} from './styles';
-import {CustomCard} from '../../shared/CustomCard';
-import {languageTxt} from '../../../utils/languageTxt';
 import {DashboardCardLayout} from '../CardLayout';
 
 

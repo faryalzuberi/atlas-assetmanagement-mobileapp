@@ -271,6 +271,13 @@ selectCategoryTxt: 'Select Category',
 selectFundTxt: 'Select Fund',
 from: 'From',
 to: 'To',
+//Login
+login: 'Login',
+signInToContinueTxt: 'Sign in to continue',
+password: 'Password',
+faceIdTxt: 'Use Face ID',
+biometricTxt: 'Biometric Login',
+
   // Type
   dashboardGuestUser: 'dashboardGuestUser',
   header: 'header',

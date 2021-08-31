@@ -1,77 +1,35 @@
 import React, { useState, useEffect } from 'react';
-import { ScrollView, View } from 'react-native';
+import { ScrollView, Text, View } from 'react-native';
 import { languageTxt } from '../../../utils/languageTxt';
-import { CustomCard } from '../../shared/CustomCard';
 import Nav from '../../../assets/icons/guest_navigation/nav.svg'
 import { colorConstants } from '../../../utils/colorConstants';
 import Positive from '../../../assets/icons/new_account/positive.svg'
 import Negative from '../../../assets/icons/new_account/negative.svg'
 import { styles } from './styles';
 import SingleBtn from '../../shared/SingleBtn';
-import { useQuery } from 'react-query';
-import { getDailyNav } from '../../../config/api/nav';
 import { Loader } from '../../shared/Loader';
 import { HeaderCardLayout } from '../../layouts/CardLayout';
+import NavHook from '../../../hooks/NavHook'
+import { NavAccordian } from '../../layouts/AccordianCardLayout';
+import { TableComponent } from '../../shared/TableComponent';
 
 export const NavHomeModal = ({ navigation }: any) => {
-    const { isLoading, error, data, refetch }: any = useQuery(
-        'getDailyNav',
-        getDailyNav,
-        { select: (parentFunds: any) => parentFunds },
-    );
-    const [title, setTitle] = useState<any>([]);
-   
-    const [dailyNav, setDailyNav] = useState<any>([
-        {
-            tableHead: [],
-            tableContent: []
-        },
-        {
-            tableHead: [],
-            tableContent: []
-        },
-        {
-            tableHead: [],
-            tableContent: []
-        },
-        {
-            tableHead: [],
-            tableContent: []
-        },
-    ]);
-    useEffect(() => {
-        if (data?.data?.data?.parent_funds) {
-            const navTitle = []
-            for (const [key, value] of Object.entries(data?.data?.data?.parent_funds)) {
-                navTitle.push(key)
-            }
-            setTitle(navTitle)
-            for (const [key, value] of Object.entries(data?.data?.data?.parent_funds)) {
-                const fundValue: any = value;
-                if (key === title[0]) {
-                   
-                    for (const [key, value] of Object.entries(fundValue)) {
-                         console.log(key)
-                       
-                      //  setDailyNav([...dailyNav,dailyNav[0]?.tableHead.push(key)]);  
-                    }
-                }
-            }
+    const {dailyNav, dailyNav1,dailyNav2, dailyNav3, title, isLoading, date, tableHead } : any  = NavHook();
+    const {navHead} = tableHead();
+    console.log( "nhy", navHead  )
 
-        }
-    }, [data]);
     return (
+        
         <ScrollView showsVerticalScrollIndicator={false} >
-            {console.log(dailyNav[0]?.tableHead)}
             {
-                (isLoading) ? (<Loader loader={isLoading} />) : (<><HeaderCardLayout  title={languageTxt.nav} icon={
+                (isLoading) ? (<Loader loader={isLoading} />) : (<><HeaderCardLayout title={languageTxt.nav} icon={
                     <Nav
                         width={'40'}
                         height={'40'}
                         fill={colorConstants.white}
                     />} />
                     <View style={styles.container}>
-                        <CustomCard type={languageTxt.accordian} title={title[0]} subType={languageTxt.navAccordianTxt} icon={{
+                        <NavAccordian  title={title && title[0]}  icon={{
                             positive: (
                                 <Positive
                                     width={'15'}
@@ -86,8 +44,8 @@ export const NavHomeModal = ({ navigation }: any) => {
                                     fill={colorConstants.primary}
                                 />
                             ),
-                        }} />
-                        <CustomCard type={languageTxt.accordian} title={title[1]} subType={languageTxt.navAccordianTxt} icon={{
+                        }} description={date} />
+                        <NavAccordian  title={title && title[1]}  icon={{
                             positive: (
                                 <Positive
                                     width={'15'}
@@ -102,8 +60,8 @@ export const NavHomeModal = ({ navigation }: any) => {
                                     fill={colorConstants.primary}
                                 />
                             ),
-                        }} />
-                        <CustomCard type={languageTxt.accordian} title={title[2]} subType={languageTxt.navAccordianTxt} icon={{
+                        }} description={date} />
+                        <NavAccordian  title={title && title[2]}  icon={{
                             positive: (
                                 <Positive
                                     width={'15'}
@@ -118,8 +76,8 @@ export const NavHomeModal = ({ navigation }: any) => {
                                     fill={colorConstants.primary}
                                 />
                             ),
-                        }} />
-                        <CustomCard type={languageTxt.accordian} title={title[3]} subType={languageTxt.navAccordianTxt} icon={{
+                        }} description={date} />
+                        <NavAccordian  title={title && title[3]}  icon={{
                             positive: (
                                 <Positive
                                     width={'15'}
@@ -134,9 +92,10 @@ export const NavHomeModal = ({ navigation }: any) => {
                                     fill={colorConstants.primary}
                                 />
                             ),
-                        }} />
+                        }} description={date} />
                         <View style={styles.buttonContainer}>
                             <SingleBtn text={languageTxt.navHistoryTxt} width={150} onPressCB={() => { navigation.navigate('NavHistory') }} />
+                            
                         </View>
                     </View></>)
             }

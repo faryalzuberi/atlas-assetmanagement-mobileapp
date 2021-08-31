@@ -17,22 +17,30 @@ export const Introduction = () => {
   useEffect(() => {
     console.log(data);
     if (data?.data) {
-      let json: any = [];
+      let json: any = [{
+        type: languageTxt.introductionTxt,
+        heading: '',
+        description: null,
+        middleContent: null,
+      }];
       for (const [key, value] of Object.entries(data.data)) {
-        if (key != 'Urdu-image') {
-          json.push({
-            name: key,
-            description: value,
-          });
+        console.log(key,value)
+        if (key == 'heading') {
+          json[0].heading = value
+        } else if(key == 'description'){
+          json[0].description =  value
+        }else if(key == 'middle_content'){
+          json[0].middleContent =  value
         }
       }
       setIntroductionList(json);
     }
   }, [data]);
-  console.log(data);
+  
   return (
     <>
       <Loader loader={isLoading} />
+      {console.log(data?.data)}
       <DetailList
         arrayList={introductionList}
         interval={1}

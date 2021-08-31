@@ -2,7 +2,7 @@ import React from 'react';
 import {ScrollView, View} from 'react-native';
 
 import {styles} from './styles';
-import {CustomCard} from '../CustomCard';
+import {HeaderCardLayout} from '../../layouts/CardLayout/HeaderCardLayout';
 
 interface modalLayoutsContainerProps {
   title: string;
@@ -18,8 +18,7 @@ export const ModalLayoutsContainer = ({
   return (
     <ScrollView showsVerticalScrollIndicator={false}>
       <View style={styles.headerContainer}>
-        <CustomCard
-          type={'header'}
+        <HeaderCardLayout
           title={title ? title : ''}
           icon={icon ? icon : <></>}
         />

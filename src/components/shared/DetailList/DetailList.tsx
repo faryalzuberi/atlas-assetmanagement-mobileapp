@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, FlatList} from 'react-native';
-
+import { IntroductionDetailsCard } from '../../layouts/CardLayout';
 import {styles} from './styles';
 import { DetailsCardLayout } from '../../layouts/CardLayout';
 import {Paragraph, Title} from 'react-native-paper';
@@ -14,13 +14,13 @@ interface detailListProps {
 
 const renderItem = ({item}: any) => (
   <View style={styles.menuCard}>
-    {item?.profile_image}
-    <DetailsCardLayout
+    {console.log('item',item?.type)}
+    {item?.type === 'Introduction' ? <IntroductionDetailsCard title={item?.heading} paragraph={item?.description} middleContent={item?.middleContent}  /> : <DetailsCardLayout
       title={item.name}
       designation={item?.designation && item.designation}
       profile_image={item?.profile_image && item.profile_image}
       paragraph={ item?.description}
-    />
+    /> }
   </View>
 );
 
