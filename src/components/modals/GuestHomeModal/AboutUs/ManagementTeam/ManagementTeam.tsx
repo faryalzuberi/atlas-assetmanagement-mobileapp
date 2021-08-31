@@ -16,20 +16,14 @@ export const ManagementTeam = () => {
   useEffect(() => {
     if (data?.data) {
       let json: any = [];
-      for (const [key, value] of Object.entries(data?.data)) {
-        const descriptionList: any = []
-       
-        if (Array.isArray(value)) {
-          descriptionList.push({
-            name: key,
-            description: value,
-          })
-          json.push(descriptionList)
-          
-        }
-
-        console.log(json[0])
-      }
+      data?.data?.members && data?.data?.members.map((v:any,i:any)=>{
+        json.push({
+          name: v?.name,
+          designation: v?.designation,
+          description: v?.description[0].description_p1,
+          profile_image: v?.profile_image
+        })
+      })
 
       setManagementTxt(json);
     }
@@ -43,31 +37,8 @@ export const ManagementTeam = () => {
         arrayList={managementTxt}
         interval={1}
         headerTitle={languageTxt.managementTeamTxt}
-        headerParagraph={data?.managementTxt}
+        headerParagraph={data?.data?.top_description}
       />
     </>
   );
 };
-// const descriptionList : any = [];
-//         if (key != 'Urdu-image') {
-//           const descriptionValue : any = value;
-//           if(typeof value === 'object'){
-//             for(const [key, value] of  Object.entries(descriptionValue)){
-//               descriptionList.push({
-//                 name: key,
-//                 description : value,
-//               })
-//             }
-
-//           }
-//           if(Array.isArray(value)){
-//               descriptionList.push({
-//                 name: key,
-//                 description : value,
-//               })
-//           }
-//           json.push({
-//             name: key,
-//             description : typeof value === 'object' ? descriptionList : value,
-//           });
-//         }
