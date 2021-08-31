@@ -32,7 +32,7 @@ export const IntroductionDetailsCard = ({ title, paragraph, middleContent }: det
                         {Object.values(v)?.map((v: any, i: any) => (
                             v && v.map((v: any, i: any) => (
                                 <>
-                                    {Object.values(v)?.length === 3 ? Object.values(v)?.map((value: any, i: any) => (
+                                    {Object.values(v)?.length > 2 ? Object.values(v)?.map((value: any, i: any) => (
                                         <View style={styles.contentTextContainer}>
                                             {i == 0 ? (<Text style={styles.contentSubText}>{value}</Text>) : (<><View style={styles.dotStyles}></View>
                                                 <Text style={styles.contentText2}>{value}</Text></>)}
