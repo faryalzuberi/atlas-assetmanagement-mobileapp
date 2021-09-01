@@ -16,7 +16,7 @@ import { TableComponent } from '../../shared/TableComponent';
 export const NavHomeModal = ({ navigation }: any) => {
     const {dailyNav, dailyNav1,dailyNav2, dailyNav3, title, isLoading, date, tableHead } : any  = NavHook();
     const {navHead} = tableHead();
-    console.log( "nhy", navHead  )
+    console.log( "nhy", navHead , dailyNav, dailyNav1, dailyNav2, dailyNav3 )
 
     return (
         

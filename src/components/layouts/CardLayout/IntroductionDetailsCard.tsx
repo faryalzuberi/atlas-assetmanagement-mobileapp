@@ -20,9 +20,7 @@ export const IntroductionDetailsCard = ({ title, paragraph, middleContent }: det
                 {paragraph && paragraph.map((v: any, i: any) => (
                     <>
                         <Paragraph style={styles.detailParagraph}>
-                            {v?.description_p1}
-                            {v?.description_p2}
-                            {v?.description_p3}
+                            {Object.values(v)}
                         </Paragraph>
                     </>
                 ))}
@@ -38,7 +36,6 @@ export const IntroductionDetailsCard = ({ title, paragraph, middleContent }: det
                                                 <Text style={styles.contentText2}>{value}</Text></>)}
                                         </View>))
                                         : Object.values(v)?.map((value: any, i: any) => (
-
                                             <View style={styles.contentTextContainer}>
                                                 <View style={styles.dotStyles}></View>
                                                 <Text style={styles.contentText2}>{value}</Text>
