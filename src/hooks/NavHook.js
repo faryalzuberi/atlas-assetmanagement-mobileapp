@@ -49,7 +49,6 @@ export default () => {
                         tabContent.push(value);
                     }
                     setDailyNav({
-                        ...dailyNav,
                         tableTitle: tabCol,
                         tableContent: tabContent,
                     }
@@ -64,7 +63,6 @@ export default () => {
                         tabContent.push(value);
                     }
                     setDailyNav1({
-                        ...dailyNav1,
                         tableTitle: tabCol,
                         tableContent: tabContent,
 
@@ -78,7 +76,6 @@ export default () => {
                         tabContent.push(value);
                     }
                     setDailyNav2({
-                        ...dailyNav2,
                         tableTitle: tabCol,
                         tableContent: tabContent,
 
@@ -92,7 +89,6 @@ export default () => {
                         tabContent.push(value);
                     }
                     setDailyNav3({
-                        ...dailyNav3,
                         tableTitle: tabCol,
                         tableContent: tabContent,
 

@@ -14,7 +14,6 @@ interface detailListProps {
 
 const renderItem = ({item}: any) => (
   <View style={styles.menuCard}>
-    {console.log('item',item?.type)}
     {item?.type === 'Introduction' ? <IntroductionDetailsCard title={item?.heading} paragraph={item?.description} middleContent={item?.middleContent}  /> : <DetailsCardLayout
       title={item?.name}
       designation={item?.designation && item.designation}

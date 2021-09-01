@@ -15,7 +15,6 @@ export const Introduction = () => {
 
   const [introductionList, setIntroductionList] = useState([]);
   useEffect(() => {
-    console.log(data);
     if (data?.data) {
       let json: any = [{
         type: languageTxt.introductionTxt,
@@ -24,7 +23,6 @@ export const Introduction = () => {
         middleContent: null,
       }];
       for (const [key, value] of Object.entries(data.data)) {
-        console.log(key,value)
         if (key == 'heading') {
           json[0].heading = value
         } else if(key == 'description'){
@@ -40,7 +38,6 @@ export const Introduction = () => {
   return (
     <>
       <Loader loader={isLoading} />
-      {console.log(data?.data)}
       <DetailList
         arrayList={introductionList}
         interval={1}

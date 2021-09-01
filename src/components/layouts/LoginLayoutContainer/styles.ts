@@ -1,4 +1,4 @@
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
 import { colorConstants } from '../../../utils/colorConstants';
 
 export const styles = StyleSheet.create({
@@ -23,11 +23,11 @@ export const styles = StyleSheet.create({
         flexDirection: 'column',
         justifyContent: 'center',
     },
-    loginText:{
+    loginText: {
         fontSize: 35,
         color: colorConstants.primary
     },
-    signInText:{
+    signInText: {
         fontSize: 18,
         color: colorConstants.gray
     },
@@ -35,22 +35,22 @@ export const styles = StyleSheet.create({
         flex: 2,
         flexDirection: 'column',
     },
-    biometricStyle:{
+    biometricStyle: {
         flexDirection: 'row',
         marginTop: 15,
         justifyContent: 'space-between'
     },
     faceIdContainer: {
-        
-        color: colorConstants.primary
+        flexDirection: 'row',
+        color: colorConstants.primary,
     },
     touchIdContainer: {
-    
+        flexDirection: 'row',
+        textAlign: 'justify',
         color: colorConstants.primary
     },
     buttonContainer: {
         flex: 1,
         justifyContent: 'flex-start',
-        paddingBottom: 50
     },
 });
