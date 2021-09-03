@@ -2,7 +2,7 @@ import React from 'react';
 
 import {languageTxt} from '../../../../../utils/languageTxt';
 import {colorConstants} from '../../../../../utils/colorConstants';
-import {TitleList} from '../../../../shared/TitleList';
+import {TitleList} from '../../../../layouts/TitleList';
 import {atlasFundsItems} from '../../../../Items/whatWeOfferItems';
 
 import WhatWeOfferIcon from '../../../../../assets/icons/guest_screen/whatWeOffer.svg';

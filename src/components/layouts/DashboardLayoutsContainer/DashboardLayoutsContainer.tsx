@@ -3,7 +3,7 @@ import {View} from 'react-native';
 
 import {styles} from './styles';
 import {DashboardList} from '../DashboardList';
-import {IntroSilder} from '../../shared/IntroSilder';
+import {IntroSilder} from '../../layouts/IntroSilder';
 import {HeaderCardLayout} from '../CardLayout'
 interface dashboardLayoutsContainerProps {
   arrayList: any;

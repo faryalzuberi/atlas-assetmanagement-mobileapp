@@ -1,9 +1,9 @@
 import React from 'react';
 import { View, FlatList } from 'react-native';
-import { ListCardLayout } from '../../layouts/CardLayout';
+import { ListCardLayout } from '../CardLayout';
 import { styles } from './styles';
-import { NewAccountAcordian } from '../../layouts/AccordianCardLayout';
-import { HeaderCardLayout } from '../../layouts/CardLayout'
+import { NewAccountAcordian } from '../AccordianCardLayout';
+import { HeaderCardLayout } from '../CardLayout'
 
 interface titleListProps {
   icon: any;

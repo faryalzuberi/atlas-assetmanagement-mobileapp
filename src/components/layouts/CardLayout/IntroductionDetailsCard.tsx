@@ -10,9 +10,8 @@ interface detailCardProps {
 }
 
 export const IntroductionDetailsCard = ({ title, paragraph, middleContent }: detailCardProps) => {
-
+    
     return (
-
         <Cards body={
             <Card.Content>
                 {title && <Title style={styles.detailTitle}>{title}</Title>}
@@ -46,11 +45,8 @@ export const IntroductionDetailsCard = ({ title, paragraph, middleContent }: det
                         ))}
                     </View>
                 ))}
-
             </Card.Content>
-
         } />
-
 
     )
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 
-import {AppHeader} from '../AppHeader';
+import {AppHeader} from '../../shared/AppHeader';
 
 interface modalStackScreenProps {
   name: string;

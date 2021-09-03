@@ -11,7 +11,6 @@ import { Loader } from '../../shared/Loader';
 import { HeaderCardLayout } from '../../layouts/CardLayout';
 import NavHook from '../../../hooks/NavHook'
 import { NavAccordian } from '../../layouts/AccordianCardLayout';
-import { TableComponent } from '../../shared/TableComponent';
 
 export const NavHomeModal = ({ navigation }: any) => {
     const {dailyNav, dailyNav1,dailyNav2, dailyNav3, title, isLoading, date, tableHead } : any  = NavHook();

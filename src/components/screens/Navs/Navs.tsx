@@ -1,7 +1,7 @@
 import React from 'react';
 import {SafeAreaView} from 'react-native-safe-area-context';
 
-import ModalStackScreen from '../../shared/ModalStackScreen/ModalStackScreen';
+import ModalStackScreen from '../../layouts/ModalStackScreen/ModalStackScreen';
 import { NavHomeModal } from '../../modals/NavHomeModal';
 import { NavHistory } from '../../modals/NavHomeModal/NavHistory';
 
