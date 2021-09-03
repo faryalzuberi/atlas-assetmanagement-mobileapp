@@ -1,8 +1,8 @@
 import React from 'react';
 import {View, FlatList} from 'react-native';
-import { IntroductionDetailsCard } from '../../layouts/CardLayout';
+import { IntroductionDetailsCard } from '../CardLayout';
 import {styles} from './styles';
-import { DetailsCardLayout } from '../../layouts/CardLayout';
+import { DetailsCardLayout } from '../CardLayout';
 import {Paragraph, Title} from 'react-native-paper';
 
 interface detailListProps {

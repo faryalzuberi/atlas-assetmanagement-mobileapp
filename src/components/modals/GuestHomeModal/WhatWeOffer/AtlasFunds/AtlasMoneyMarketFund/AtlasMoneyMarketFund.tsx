@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import {useQuery} from 'react-query';
 
 import {Loader} from '../../../../../shared/Loader';
-import {DetailList} from '../../../../../shared/DetailList';
+import {DetailList} from '../../../../../layouts/DetailList';
 import {languageTxt} from '../../../../../../utils/languageTxt';
 import {getAtlasMoneyMarketFund} from '../../../../../../config/api/whatWeOffer';
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import {languageTxt} from '../../../../utils/languageTxt';
-import {TitleList} from '../../../shared/TitleList';
+import {TitleList} from '../../../layouts/TitleList';
 import {colorConstants} from '../../../../utils/colorConstants';
 import {NewAccountItem} from '../../../Items/NewAccountItems'
 import CreateAccount from '../../../../assets/icons/new_account/createAccount.svg'

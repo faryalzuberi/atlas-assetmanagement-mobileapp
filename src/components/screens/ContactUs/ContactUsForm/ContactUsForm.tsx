@@ -9,7 +9,7 @@ import IconBtn from '../../../shared/IconBtn';
 
 import Returns from '../../../../assets/icons/guest_navigation/returns.svg';
 
-import {ModalLayoutsContainer} from '../../../shared/ModalLayoutsContainer';
+import {ModalLayoutsContainer} from '../../../layouts/ModalLayoutsContainer';
 import {languageTxt} from '../../../../utils/languageTxt';
 import ContactUsIcon from '../../../../assets/icons/guest_navigation/contactUs.svg';
 

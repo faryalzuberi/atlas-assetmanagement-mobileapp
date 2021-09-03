@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ModalStackScreen from '../../shared/ModalStackScreen/ModalStackScreen';
+import ModalStackScreen from '../../layouts/ModalStackScreen/ModalStackScreen';
 import {ContactUsForm} from './ContactUsForm';
 
 export const ContactUs = ({navigation}: any) => {

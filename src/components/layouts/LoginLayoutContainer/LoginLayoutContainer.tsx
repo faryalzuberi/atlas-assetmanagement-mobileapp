@@ -25,7 +25,6 @@ export const LoginLayoutContainer = () => {
   const touchIdAuth = () => {
     TouchID.isSupported(optionalConfig)
       .then(biometryType => {
-        console.log('true', biometryType)
         if (biometryType === 'TouchID') {
           TouchID.authenticate("Authenticate With Biometric", optionalConfigObject)
             .then((success: any) => {
