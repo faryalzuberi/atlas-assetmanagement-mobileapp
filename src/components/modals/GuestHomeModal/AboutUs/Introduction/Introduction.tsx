@@ -1,5 +1,4 @@
-import React, {useEffect, useState} from 'react';
-
+import React from 'react';
 import {Loader} from '../../../../shared/Loader';
 import {DetailList} from '../../../../layouts/DetailList';
 import {languageTxt} from '../../../../../utils/languageTxt';
