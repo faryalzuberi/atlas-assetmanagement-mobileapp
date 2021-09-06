@@ -1,33 +1,11 @@
-import React, {useEffect, useState} from 'react';
-import {useQuery} from 'react-query';
-
+import React from 'react';
 import {Loader} from '../../../../shared/Loader';
 import {DetailList} from '../../../../layouts/DetailList';
 import {languageTxt} from '../../../../../utils/languageTxt';
-import {getVisionMission} from '../../../../../config/api/aboutUs';
-
+import {visionMissionTransformer} from '../../../../../utils/Transformer/aboutUsTransformer';
 export const VisionMission = () => {
-  const {isLoading, error, data, refetch}: any = useQuery(
-    'getVisionMission',
-    getVisionMission,
-    {select: visionMission => visionMission},
-  );
-
-  const [visionMissionList, setVisionMissionList] = useState([]);
-  useEffect(() => {
-    if (data?.data) {
-      let json: any = [];
-      for (const [key, value] of Object.entries(data.data)) {
-        if (key != 'Urdu-image') {
-          json.push({
-            name: key,
-            description: value,
-          });
-        }
-      }
-      setVisionMissionList(json);
-    }
-  }, [data]);
+  
+  const {visionMissionList, isLoading} = visionMissionTransformer();
 
   return (
     <>
